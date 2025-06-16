@@ -45,4 +45,4 @@ Notes
 =====
 
 URL for DejaCode Enterprise:
-'https://enterprise.dejacode.com/api/v2/licenses/'
+``https://enterprise.dejacode.com/api/v2/licenses/``

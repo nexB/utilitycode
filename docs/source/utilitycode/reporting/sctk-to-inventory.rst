@@ -42,5 +42,5 @@ from package-lock.json), new rows will be created for each of the package.
 See https://github.com/nexB/utilitycode/blob/main/src/reporting/sctk_to_inventory.py for the fields
 that will be ignored.
 
-See https://github.com/nexB/utilitycode/blob/main/src/reporting/sctk_to_inventory.py#L69 for the fields
-that will be created when the `--report` option is used.
+See the `fields_header` list for the fields that will be created when the
+`--report` option is used.

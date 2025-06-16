@@ -171,7 +171,7 @@ The file-cat rules
 ------------------
 
 The default file-cat rules are located at `file_cat_rules.csv
-<https://github.com/nexB/utilitycode/tree/main/src/utilitycode/file_cat_rules.csv>`_
+<https://github.com/nexB/utilitycode/blob/main/src/utilitycode/file_cat_rules.csv>`_
 
 "Users can create custom rules in a .csv file and apply them using the
 `--rules`` option.
