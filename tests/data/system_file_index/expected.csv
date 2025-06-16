@@ -1,0 +1,4 @@
+Resource,matched_suffix,matched_package
+bin/afio,bin/afio,afio
+/foo/bar/bin/ash,bin/ash,ash
+/foo/bar/baz/bin/archdetect,bin/archdetect,archdetect-deb

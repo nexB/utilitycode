@@ -1,0 +1,18 @@
+{
+    "ubiquity": [
+        "bin/autopartition",
+        "bin/autopartition-crypto"
+    ],
+    "afio": [
+        "bin/afio"
+    ],
+    "ash": [
+        "bin/ash"
+    ],
+    "archdetect-deb": [
+        "bin/archdetect"
+    ],
+    "fex": [
+        ":sexsend:sexget:"
+    ]
+}

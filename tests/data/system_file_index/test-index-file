@@ -1,0 +1,170 @@
+ccollections
+defaultdict
+p0
+(c__builtin__
+list
+p1
+tp2
+Rp3
+V
+p4
+(lp5
+g4
+ag4
+ag4
+ag4
+ag4
+ag4
+ag4
+ag4
+asVFILE
+p6
+(lp7
+VLOCATION
+p8
+asVutility, as in `grep <regular expression>
+p9
+(lp10
+VCONTENTS':
+p11
+asV:sexsend:sexget:
+p12
+(lp13
+Vfex
+p14
+asVYou can use this list to determine which package contains a
+p15
+(lp16
+Vspecific
+p17
+asVusr/lib/cfengine/bin/noseyparker
+p18
+(lp19
+Vcfengine
+p20
+asVupdated weekly, each architecture on a different
+p21
+(lp22
+Vday.
+p23
+asVparticular file, you can use `dpkg --search
+p24
+(lp25
+V<filename>':
+p26
+asVbin/archdetect
+p27
+(lp28
+Varchdetect-deb
+p29
+asVusr/X11R6/bin/noseguy
+p30
+(lp31
+Vxscreensaver
+p32
+asVetc/nosendfile
+p33
+(lp34
+Vsendfile
+p35
+asVdpkg:
+p36
+(lp37
+Vdselect
+p38
+asV$ dpkg --search
+p39
+(lp40
+Vdselect
+p41
+asVThe best way to search quickly for a file is with the Unix
+p42
+(lp43
+V`grep'
+p44
+asVbin/autopartition
+p45
+(lp46
+Vubiquity
+p47
+asVbin/afio
+p48
+(lp49
+Vafio
+p50
+asVfile, or whether or not a specific file is available.  The list
+p51
+(lp52
+Vis
+p53
+asVfind out which packages on an installed Debian system provide
+p54
+(lp55
+Va
+p56
+asVlisted.  When a directory is contained in more than one package,
+p57
+(lp58
+Vonly
+p59
+asVbin/autopartition-crypto
+p60
+(lp61
+Vubiquity
+p62
+asVpackages are installed on an actual system at once.  If you want
+p63
+(lp64
+Vto
+p65
+asVusr/X11R6/man/man1/noseguy.1x.gz
+p66
+(lp67
+Vxscreensaver
+p68
+asVusr/doc/examples/ucbmpeg/mpeg_encode/nosearch.param
+p69
+(lp70
+Vucbmpeg
+p71
+asVsystem to the package from which it originates.  It includes
+p72
+(lp73
+Vpackages
+p74
+asVThis list contains files in all packages, even though not all of
+p75
+(lp76
+Vthe
+p77
+asVthe first is
+p78
+(lp79
+Vlisted.
+p80
+asV$ grep nose
+p81
+(lp82
+VContents
+p83
+asVbin/ash
+p84
+(lp85
+Vash
+p86
+asVThis file maps each file available in the
+p87
+(lp88
+VUbuntu
+p89
+asVfrom the DIST distribution for the ARCH
+p90
+(lp91
+Varchitecture.
+p92
+asVWhen a file is contained in more than one package, all packages
+p93
+(lp94
+Vare
+p95
+as.

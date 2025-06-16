@@ -1,0 +1,4 @@
+Resource,dwarf_source_path,resolved_dwarf_source_path,matched,matched_score_from_right,matched_score_from_left,total_path_segments_count,match_percentage_from_right,match_percentage_from_left,matched_Resource,license expression
+Sample1.so,path/to/source/foo.c,path/to/source/foo.c,path/to/source/foo.c,4,4,4,100.0,100.0,path/to/source/foo.c,apache-2.0
+Sample2.so,path/to/../source/bar.c,path/source/bar.c,path/source/bar.c,3,3,3,100.0,100.0,path/source/bar.c,mit
+Sample2.so,path/./source/bar.c,path/source/bar.c,path/source/bar.c,3,3,3,100.0,100.0,path/source/bar.c,mit

@@ -1,0 +1,21 @@
+PODS:
+  - LemonUninstaller (0.1.0):
+    - Masonry (= 1.1.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - libPusher (= 1.5)
+  - Reachability (~> 3.1.0)
+
+EXTERNAL SOURCES:
+  MotionTransitioning:
+    :path: ./
+
+SPEC CHECKSUMS:
+  libPusher: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  Reachability: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  SocketRocket: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  
+PODFILE CHECKSUM: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+COCOAPODS: 0.28.0

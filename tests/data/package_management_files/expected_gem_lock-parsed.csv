@@ -1,0 +1,185 @@
+Resource,package__type,package__name,package__version,package__declared_license,package__description,package__download_url,package__homepage_url
+C:\337\Gemfile.lock,gem,turbolinks,v 80216ce9d89920bf073709405e3fce6d0a3ccd9a,,,https://rubygems.org/downloads/turbolinks-80216ce9d89920bf073709405e3fce6d0a3ccd9a.gem,https://rubygems.org/gems/turbolinks/versions/80216ce9d89920bf073709405e3fce6d0a3ccd9a
+C:\337\Gemfile.lock,gem,coffee-rails,v 5.0.0,MIT,CoffeeScript adapter for the Rails asset pipeline.,https://rubygems.org/downloads/coffee-rails-5.0.0.gem,https://rubygems.org/gems/coffee-rails/versions/5.0.0
+C:\337\Gemfile.lock,gem,actioncable,v 5.2.6,MIT,Structure many real-time application concerns into channels over a single WebSocket connection.,https://rubygems.org/downloads/actioncable-5.2.6.gem,https://rubygems.org/gems/actioncable/versions/5.2.6
+C:\337\Gemfile.lock,gem,actionpack,v 5.2.6,MIT,"Web apps on Rails. Simple, battle-tested conventions for building and testing MVC web applications. Works with any Rack-compatible server.",https://rubygems.org/downloads/actionpack-5.2.6.gem,https://rubygems.org/gems/actionpack/versions/5.2.6
+C:\337\Gemfile.lock,gem,nio4r,v 2.5.8,MIT,"Cross-platform asynchronous I/O primitives for scalable network clients and servers. Inspired by the Java NIO API, but simplified for ease-of-use.",https://rubygems.org/downloads/nio4r-2.5.8.gem,https://rubygems.org/gems/nio4r/versions/2.5.8
+C:\337\Gemfile.lock,gem,websocket-driver,v 0.7.4,Apache-2.0,,https://rubygems.org/downloads/websocket-driver-0.7.4.gem,https://rubygems.org/gems/websocket-driver/versions/0.7.4
+C:\337\Gemfile.lock,gem,actionmailer,v 5.2.6,MIT,"Email on Rails. Compose, deliver, receive, and test emails using the familiar controller/view pattern. First-class support for multipart email and attachments.",https://rubygems.org/downloads/actionmailer-5.2.6.gem,https://rubygems.org/gems/actionmailer/versions/5.2.6
+C:\337\Gemfile.lock,gem,actionview,v 5.2.6,MIT,"Simple, battle-tested conventions and helpers for building web pages.",https://rubygems.org/downloads/actionview-5.2.6.gem,https://rubygems.org/gems/actionview/versions/5.2.6
+C:\337\Gemfile.lock,gem,activejob,v 5.2.6,MIT,Declare job classes that can be run by a variety of queueing backends.,https://rubygems.org/downloads/activejob-5.2.6.gem,https://rubygems.org/gems/activejob/versions/5.2.6
+C:\337\Gemfile.lock,gem,mail,v 2.7.1,MIT,A really Ruby Mail handler.,https://rubygems.org/downloads/mail-2.7.1.gem,https://rubygems.org/gems/mail/versions/2.7.1
+C:\337\Gemfile.lock,gem,rails-dom-testing,v 2.0.3,MIT, This gem can compare doms and assert certain elements exists in doms using Nokogiri. ,https://rubygems.org/downloads/rails-dom-testing-2.0.3.gem,https://rubygems.org/gems/rails-dom-testing/versions/2.0.3
+C:\337\Gemfile.lock,gem,activesupport,v 5.2.6,MIT,"A toolkit of support libraries and Ruby core extensions extracted from the Rails framework. Rich support for multibyte strings, internationalization, time zones, and testing.",https://rubygems.org/downloads/activesupport-5.2.6.gem,https://rubygems.org/gems/activesupport/versions/5.2.6
+C:\337\Gemfile.lock,gem,rack,v 2.2.3,MIT,"Rack provides a minimal, modular and adaptable interface for developing
+web applications in Ruby. By wrapping HTTP requests and responses in
+the simplest way possible, it unifies and distills the API for web
+servers, web frameworks, and software in between (the so-called
+middleware) into a single method call.
+",https://rubygems.org/downloads/rack-2.2.3.gem,https://rubygems.org/gems/rack/versions/2.2.3
+C:\337\Gemfile.lock,gem,rack-test,v 1.1.0,MIT,"Rack::Test is a small, simple testing API for Rack apps. It can be used on its
+own or as a reusable starting point for Web frameworks and testing libraries
+to build on. Most of its initial functionality is an extraction of Merb 1.0's
+request helpers feature.",https://rubygems.org/downloads/rack-test-1.1.0.gem,https://rubygems.org/gems/rack-test/versions/1.1.0
+C:\337\Gemfile.lock,gem,rails-html-sanitizer,v 1.3.0,MIT,HTML sanitization for Rails applications,https://rubygems.org/downloads/rails-html-sanitizer-1.3.0.gem,https://rubygems.org/gems/rails-html-sanitizer/versions/1.3.0
+C:\337\Gemfile.lock,gem,builder,v 3.2.4,MIT,"Builder provides a number of builder objects that make creating structured data
+simple to do.  Currently the following builder objects are supported:
+
+* XML Markup
+* XML Events
+",https://rubygems.org/downloads/builder-3.2.4.gem,https://rubygems.org/gems/builder/versions/3.2.4
+C:\337\Gemfile.lock,gem,erubi,v 1.10.0,MIT,Erubi is a ERB template engine for ruby. It is a simplified fork of Erubis,https://rubygems.org/downloads/erubi-1.10.0.gem,https://rubygems.org/gems/erubi/versions/1.10.0
+C:\337\Gemfile.lock,gem,globalid,v 0.4.2,MIT,URIs for your models makes it easy to pass references around.,https://rubygems.org/downloads/globalid-0.4.2.gem,https://rubygems.org/gems/globalid/versions/0.4.2
+C:\337\Gemfile.lock,gem,activemodel,v 5.2.6,MIT,"A toolkit for building modeling frameworks like Active Record. Rich support for attributes, callbacks, validations, serialization, internationalization, and testing.",https://rubygems.org/downloads/activemodel-5.2.6.gem,https://rubygems.org/gems/activemodel/versions/5.2.6
+C:\337\Gemfile.lock,gem,activerecord,v 5.2.6,MIT,"Databases on Rails. Build a persistent domain model by mapping database tables to Ruby classes. Strong conventions for associations, validations, aggregations, migrations, and testing come baked-in.",https://rubygems.org/downloads/activerecord-5.2.6.gem,https://rubygems.org/gems/activerecord/versions/5.2.6
+C:\337\Gemfile.lock,gem,arel,v 9.0.0,MIT,"Arel Really Exasperates Logicians
+
+Arel is a SQL AST manager for Ruby. It
+
+1. Simplifies the generation of complex SQL queries
+2. Adapts to various RDBMSes
+
+It is intended to be a framework framework; that is, you can build your own ORM
+with it, focusing on innovative object and collection modeling as opposed to
+database compatibility and query generation.",https://rubygems.org/downloads/arel-9.0.0.gem,https://rubygems.org/gems/arel/versions/9.0.0
+C:\337\Gemfile.lock,gem,activestorage,v 5.2.6,MIT,Attach cloud and local files in Rails applications.,https://rubygems.org/downloads/activestorage-5.2.6.gem,https://rubygems.org/gems/activestorage/versions/5.2.6
+C:\337\Gemfile.lock,gem,marcel,v 1.0.1,"MIT,Apache-2.0",,https://rubygems.org/downloads/marcel-1.0.1.gem,https://rubygems.org/gems/marcel/versions/1.0.1
+C:\337\Gemfile.lock,gem,concurrent-ruby,v 1.1.8,MIT,"Modern concurrency tools including agents, futures, promises, thread pools, actors, supervisors, and more.
+Inspired by Erlang, Clojure, Go, JavaScript, actors, and classic concurrency patterns.
+",https://rubygems.org/downloads/concurrent-ruby-1.1.8.gem,https://rubygems.org/gems/concurrent-ruby/versions/1.1.8
+C:\337\Gemfile.lock,gem,i18n,v 1.8.10,MIT,New wave Internationalization support for Ruby.,https://rubygems.org/downloads/i18n-1.8.10.gem,https://rubygems.org/gems/i18n/versions/1.8.10
+C:\337\Gemfile.lock,gem,minitest,v 5.14.4,MIT,"minitest provides a complete suite of testing facilities supporting
+TDD, BDD, mocking, and benchmarking.
+
+    ""I had a class with Jim Weirich on testing last week and we were
+     allowed to choose our testing frameworks. Kirk Haines and I were
+     paired up and we cracked open the code for a few test
+     frameworks...
+
+     I MUST say that minitest is *very* readable / understandable
+     compared to the 'other two' options we looked at. Nicely done and
+     thank you for helping us keep our mental sanity.""
+
+    -- Wayne E. Seguin
+
+minitest/test is a small and incredibly fast unit testing framework.
+It provides a rich set of assertions to make your tests clean and
+readable.
+
+minitest/spec is a functionally complete spec engine. It hooks onto
+minitest/test and seamlessly bridges test assertions over to spec
+expectations.
+
+minitest/benchmark is an awesome way to assert the performance of your
+algorithms in a repeatable manner. Now you can assert that your newb
+co-worker doesn't replace your linear algorithm with an exponential
+one!
+
+minitest/mock by Steven Baker, is a beautifully tiny mock (and stub)
+object framework.
+
+minitest/pride shows pride in testing and adds coloring to your test
+output. I guess it is an example of how to write IO pipes too. :P
+
+minitest/test is meant to have a clean implementation for language
+implementors that need a minimal set of methods to bootstrap a working
+test suite. For example, there is no magic involved for test-case
+discovery.
+
+    ""Again, I can't praise enough the idea of a testing/specing
+     framework that I can actually read in full in one sitting!""
+
+    -- Piotr Szotkowski
+
+Comparing to rspec:
+
+    rspec is a testing DSL. minitest is ruby.
+
+    -- Adam Hawkins, ""Bow Before MiniTest""
+
+minitest doesn't reinvent anything that ruby already provides, like:
+classes, modules, inheritance, methods. This means you only have to
+learn ruby to use minitest and all of your regular OO practices like
+extract-method refactorings still apply.",https://rubygems.org/downloads/minitest-5.14.4.gem,https://rubygems.org/gems/minitest/versions/5.14.4
+C:\337\Gemfile.lock,gem,tzinfo,v 1.2.9,MIT,TZInfo provides daylight savings aware transformations between times in different time zones.,https://rubygems.org/downloads/tzinfo-1.2.9.gem,https://rubygems.org/gems/tzinfo/versions/1.2.9
+C:\337\Gemfile.lock,gem,addressable,v 2.8.0,Apache-2.0,"Addressable is an alternative implementation to the URI implementation that is
+part of Ruby's standard library. It is flexible, offers heuristic parsing, and
+additionally provides extensive support for IRIs and URI templates.
+",https://rubygems.org/downloads/addressable-2.8.0.gem,https://rubygems.org/gems/addressable/versions/2.8.0
+C:\337\Gemfile.lock,gem,public_suffix,v 4.0.6,MIT,"PublicSuffix can parse and decompose a domain name into top level domain, domain and subdomains.",https://rubygems.org/downloads/public_suffix-4.0.6.gem,https://rubygems.org/gems/public_suffix/versions/4.0.6
+C:\337\Gemfile.lock,gem,capybara,v 3.35.3,MIT,Capybara is an integration testing tool for rack based web applications. It simulates how a user would interact with a website,https://rubygems.org/downloads/capybara-3.35.3.gem,https://rubygems.org/gems/capybara/versions/3.35.3
+C:\337\Gemfile.lock,gem,mini_mime,v 1.1.0,MIT,A lightweight mime type lookup toy,https://rubygems.org/downloads/mini_mime-1.1.0.gem,https://rubygems.org/gems/mini_mime/versions/1.1.0
+C:\337\Gemfile.lock,gem,nokogiri,v 1.11.6,MIT,"Nokogiri (鋸) makes it easy and painless to work with XML and HTML from Ruby. It provides a
+sensible, easy-to-understand API for reading, writing, modifying, and querying documents. It is
+fast and standards-compliant by relying on native parsers like libxml2 (C) and xerces (Java).
+",https://rubygems.org/downloads/nokogiri-1.11.6.gem,https://rubygems.org/gems/nokogiri/versions/1.11.6
+C:\337\Gemfile.lock,gem,regexp_parser,v 2.0.3,MIT,"A library for tokenizing, lexing, and parsing Ruby regular expressions.",https://rubygems.org/downloads/regexp_parser-2.0.3.gem,https://rubygems.org/gems/regexp_parser/versions/2.0.3
+C:\337\Gemfile.lock,gem,xpath,v 3.2.0,MIT,XPath is a Ruby DSL for generating XPath expressions,https://rubygems.org/downloads/xpath-3.2.0.gem,https://rubygems.org/gems/xpath/versions/3.2.0
+C:\337\Gemfile.lock,gem,childprocess,v 3.0.0,MIT,This gem aims at being a simple and reliable solution for controlling external programs running in the background on any Ruby / OS combination.,https://rubygems.org/downloads/childprocess-3.0.0.gem,https://rubygems.org/gems/childprocess/versions/3.0.0
+C:\337\Gemfile.lock,gem,coffee-script,v 2.4.1,MIT,"    Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler.
+",https://rubygems.org/downloads/coffee-script-2.4.1.gem,https://rubygems.org/gems/coffee-script/versions/2.4.1
+C:\337\Gemfile.lock,gem,railties,v 5.2.6,MIT,"Rails internals: application bootup, plugins, generators, and rake tasks.",https://rubygems.org/downloads/railties-5.2.6.gem,https://rubygems.org/gems/railties/versions/5.2.6
+C:\337\Gemfile.lock,gem,coffee-script-source,v 1.12.2,MIT,"    CoffeeScript is a little language that compiles into JavaScript.
+    Underneath all of those embarrassing braces and semicolons,
+    JavaScript has always had a gorgeous object model at its heart.
+    CoffeeScript is an attempt to expose the good parts of JavaScript
+    in a simple way.
+",https://rubygems.org/downloads/coffee-script-source-1.12.2.gem,https://rubygems.org/gems/coffee-script-source/versions/1.12.2
+C:\337\Gemfile.lock,gem,execjs,v 2.7.0,MIT,ExecJS lets you run JavaScript code from Ruby.,https://rubygems.org/downloads/execjs-2.7.0.gem,https://rubygems.org/gems/execjs/versions/2.7.0
+C:\337\Gemfile.lock,gem,crass,v 1.0.6,MIT,Crass is a pure Ruby CSS parser based on the CSS Syntax Level 3 spec.,https://rubygems.org/downloads/crass-1.0.6.gem,https://rubygems.org/gems/crass/versions/1.0.6
+C:\337\Gemfile.lock,gem,database_cleaner,v 1.8.5,MIT,Strategies for cleaning databases. Can be used to ensure a clean slate for testing.,https://rubygems.org/downloads/database_cleaner-1.8.5.gem,https://rubygems.org/gems/database_cleaner/versions/1.8.5
+C:\337\Gemfile.lock,gem,ffi,v 1.11.1,BSD-3-Clause,Ruby FFI library,https://rubygems.org/downloads/ffi-1.11.1.gem,https://rubygems.org/gems/ffi/versions/1.11.1
+C:\337\Gemfile.lock,gem,jquery-rails,v 4.4.0,MIT,This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.,https://rubygems.org/downloads/jquery-rails-4.4.0.gem,https://rubygems.org/gems/jquery-rails/versions/4.4.0
+C:\337\Gemfile.lock,gem,thor,v 1.1.0,MIT,Thor is a toolkit for building powerful command-line interfaces.,https://rubygems.org/downloads/thor-1.1.0.gem,https://rubygems.org/gems/thor/versions/1.1.0
+C:\337\Gemfile.lock,gem,loofah,v 2.9.1,MIT,"Loofah is a general library for manipulating and transforming HTML/XML documents and fragments, built on top of Nokogiri.
+
+Loofah excels at HTML sanitization (XSS prevention). It includes some nice HTML sanitizers, which are based on HTML5lib's safelist, so it most likely won't make your codes less secure. (These statements have not been evaluated by Netexperts.)
+
+ActiveRecord extensions for sanitization are available in the [`loofah-activerecord` gem](https://github.com/flavorjones/loofah-activerecord).",https://rubygems.org/downloads/loofah-2.9.1.gem,https://rubygems.org/gems/loofah/versions/2.9.1
+C:\337\Gemfile.lock,gem,method_source,v 1.0.0,MIT,retrieve the sourcecode for a method,https://rubygems.org/downloads/method_source-1.0.0.gem,https://rubygems.org/gems/method_source/versions/1.0.0
+C:\337\Gemfile.lock,gem,mini_portile2,v 2.5.3,MIT,Simplistic port-like solution for developers. It provides a standard and simplified way to compile against dependency libraries without messing up your system.,https://rubygems.org/downloads/mini_portile2-2.5.3.gem,https://rubygems.org/gems/mini_portile2/versions/2.5.3
+C:\337\Gemfile.lock,gem,racc,v 1.5.2,"Ruby,BSD-2-Clause","Racc is a LALR(1) parser generator.
+  It is written in Ruby itself, and generates Ruby program.
+
+  NOTE: Ruby 1.8.x comes with Racc runtime module.  You
+  can run your parsers generated by racc 1.4.x out of the
+  box.
+",https://rubygems.org/downloads/racc-1.5.2.gem,https://rubygems.org/gems/racc/versions/1.5.2
+C:\337\Gemfile.lock,gem,percy-capybara,v 4.3.3,MIT,,https://rubygems.org/downloads/percy-capybara-4.3.3.gem,https://rubygems.org/gems/percy-capybara/versions/4.3.3
+C:\337\Gemfile.lock,gem,puma,v 5.5.1,BSD-3-Clause,"Puma is a simple, fast, threaded, and highly parallel HTTP 1.1 server for Ruby/Rack applications. Puma is intended for use in both development and production environments. It's great for highly parallel Ruby implementations such as Rubinius and JRuby as well as as providing process worker support to support CRuby well.",https://rubygems.org/downloads/puma-5.5.1.gem,https://rubygems.org/gems/puma/versions/5.5.1
+C:\337\Gemfile.lock,gem,rails,v 5.2.6,MIT,Ruby on Rails is a full-stack web framework optimized for programmer happiness and sustainable productivity. It encourages beautiful code by favoring convention over configuration.,https://rubygems.org/downloads/rails-5.2.6.gem,https://rubygems.org/gems/rails/versions/5.2.6
+C:\337\Gemfile.lock,gem,sprockets-rails,v 3.2.2,MIT,,https://rubygems.org/downloads/sprockets-rails-3.2.2.gem,https://rubygems.org/gems/sprockets-rails/versions/3.2.2
+C:\337\Gemfile.lock,gem,rails_12factor,v 0.0.3,MIT,Run Rails the 12factor way,https://rubygems.org/downloads/rails_12factor-0.0.3.gem,https://rubygems.org/gems/rails_12factor/versions/0.0.3
+C:\337\Gemfile.lock,gem,rails_serve_static_assets,v 0.0.4,MIT,Force Rails to serve static assets,https://rubygems.org/downloads/rails_serve_static_assets-0.0.4.gem,https://rubygems.org/gems/rails_serve_static_assets/versions/0.0.4
+C:\337\Gemfile.lock,gem,rails_stdout_logging,v 0.0.4,MIT,Sets Rails to log to stdout,https://rubygems.org/downloads/rails_stdout_logging-0.0.4.gem,https://rubygems.org/gems/rails_stdout_logging/versions/0.0.4
+C:\337\Gemfile.lock,gem,rake,v 13.0.3,MIT,"Rake is a Make-like program implemented in Ruby. Tasks and dependencies are
+specified in standard Ruby syntax.
+Rake has the following features:
+  * Rakefiles (rake's version of Makefiles) are completely defined in standard Ruby syntax.
+    No XML files to edit. No quirky Makefile syntax to worry about (is that a tab or a space?)
+  * Users can specify tasks with prerequisites.
+  * Rake supports rule patterns to synthesize implicit tasks.
+  * Flexible FileLists that act like arrays but know about manipulating file names and paths.
+  * Supports parallel execution of tasks.
+",https://rubygems.org/downloads/rake-13.0.3.gem,https://rubygems.org/gems/rake/versions/13.0.3
+C:\337\Gemfile.lock,gem,rb-fsevent,v 0.10.3,MIT,FSEvents API with Signals catching (without RubyCocoa),https://rubygems.org/downloads/rb-fsevent-0.10.3.gem,https://rubygems.org/gems/rb-fsevent/versions/0.10.3
+C:\337\Gemfile.lock,gem,rb-inotify,v 0.9.10,MIT,,https://rubygems.org/downloads/rb-inotify-0.9.10.gem,https://rubygems.org/gems/rb-inotify/versions/0.9.10
+C:\337\Gemfile.lock,gem,rubyzip,v 2.0.0,BSD 2-Clause,,https://rubygems.org/downloads/rubyzip-2.0.0.gem,https://rubygems.org/gems/rubyzip/versions/2.0.0
+C:\337\Gemfile.lock,gem,sass,v 3.6.0,MIT,"      Sass makes CSS fun again. Sass is an extension of CSS, adding
+      nested rules, variables, mixins, selector inheritance, and more.
+      It's translated to well-formatted, standard CSS using the
+      command line tool or a web-framework plugin.
+",https://rubygems.org/downloads/sass-3.6.0.gem,https://rubygems.org/gems/sass/versions/3.6.0
+C:\337\Gemfile.lock,gem,sass-listen,v 4.0.0,MIT,This fork of guard/listen provides a stable API for users of the ruby Sass CLI,https://rubygems.org/downloads/sass-listen-4.0.0.gem,https://rubygems.org/gems/sass-listen/versions/4.0.0
+C:\337\Gemfile.lock,gem,sass-rails,v 5.0.7,MIT,Sass adapter for the Rails asset pipeline.,https://rubygems.org/downloads/sass-rails-5.0.7.gem,https://rubygems.org/gems/sass-rails/versions/5.0.7
+C:\337\Gemfile.lock,gem,sprockets,v 3.7.2,MIT,"Sprockets is a Rack-based asset packaging system that concatenates and serves JavaScript, CoffeeScript, CSS, LESS, Sass, and SCSS.",https://rubygems.org/downloads/sprockets-3.7.2.gem,https://rubygems.org/gems/sprockets/versions/3.7.2
+C:\337\Gemfile.lock,gem,tilt,v 2.0.8,MIT,Generic interface to multiple Ruby template engines,https://rubygems.org/downloads/tilt-2.0.8.gem,https://rubygems.org/gems/tilt/versions/2.0.8
+C:\337\Gemfile.lock,gem,selenium-webdriver,v 3.142.7,Apache-2.0,"WebDriver is a tool for writing automated tests of websites. It aims to mimic the behaviour of a real user, and as such interacts with the HTML of the application.",https://rubygems.org/downloads/selenium-webdriver-3.142.7.gem,https://rubygems.org/gems/selenium-webdriver/versions/3.142.7
+C:\337\Gemfile.lock,gem,sqlite3,v 1.4.2,BSD-3-Clause,"This module allows Ruby programs to interface with the SQLite3
+database engine (http://www.sqlite.org).  You must have the
+SQLite engine installed in order to build this module.
+
+Note that this module is only compatible with SQLite 3.6.16 or newer.",https://rubygems.org/downloads/sqlite3-1.4.2.gem,https://rubygems.org/gems/sqlite3/versions/1.4.2
+C:\337\Gemfile.lock,gem,thread_safe,v 0.3.6,Apache-2.0,A collection of data structures and utilities to make thread-safe programming in Ruby easier,https://rubygems.org/downloads/thread_safe-0.3.6.gem,https://rubygems.org/gems/thread_safe/versions/0.3.6
+C:\337\Gemfile.lock,gem,uglifier,v 4.2.0,MIT,Uglifier minifies JavaScript files by wrapping UglifyJS to be accessible in Ruby,https://rubygems.org/downloads/uglifier-4.2.0.gem,https://rubygems.org/gems/uglifier/versions/4.2.0
+C:\337\Gemfile.lock,gem,websocket-extensions,v 0.1.5,Apache-2.0,,https://rubygems.org/downloads/websocket-extensions-0.1.5.gem,https://rubygems.org/gems/websocket-extensions/versions/0.1.5

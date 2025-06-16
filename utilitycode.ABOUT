@@ -1,0 +1,19 @@
+about_resource: .
+
+name: UtilityCode
+version: 1.0.0
+
+owner: nexB Inc.
+
+vcs_tool: git
+vcs_repository: https://github.com/nexb/utilitycode.git
+
+description: Analysis tools
+
+copyright: Copyright (c) nexB Inc. and others
+
+license_expression: apache-2.0
+licenses:
+  - key: apache-2.0
+    name: Apache License 2.0
+    file: apache-2.0.LICENSE

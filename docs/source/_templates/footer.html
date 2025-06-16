@@ -1,0 +1,25 @@
+{% extends '!footer.html' %}
+
+{% block extrafooter %}
+<!-- your html code here -->
+<!-- <div style="color: #999999; font-size: 14px;">
+  This is test footer text with a <a href="https://www.nexb.com" target="_blank">link to nexB</a>.
+</div> -->
+{% endblock %}
+
+
+
+
+{%- block contentinfo %}
+<p>
+{%- if show_copyright %}
+  {%- if hasdoc('copyright') %}
+    {%- trans path=pathto('copyright'), copyright=copyright|e %}&#169; <a href="{{ path }}">Copyright</a> {{ copyright }}{% endtrans %}
+  {%- else %}
+    {%- trans copyright=copyright|e %}&#169; Copyright {{ copyright }}{% endtrans %}
+  {%- endif %}
+{%- endif %}
+
+</p>
+{%- endblock %}
+

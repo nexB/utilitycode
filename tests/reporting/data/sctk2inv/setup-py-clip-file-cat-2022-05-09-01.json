@@ -1,0 +1,119 @@
+{
+  "headers": [
+    {
+      "tool_name": "scancode-toolkit",
+      "tool_version": "31.0.0b3",
+      "options": {
+        "input": [
+          "setup.py"
+        ],
+        "--copyright": true,
+        "--file-cat": true,
+        "--info": true,
+        "--json-pp": "/mnt/c/nexb/file-cat/sctk-file-cat-02/setup-py-clip-file-cat-2022-05-09-01.json",
+        "--license": true,
+        "--package": true
+      },
+      "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
+      "start_timestamp": "2022-05-09T205334.374265",
+      "end_timestamp": "2022-05-09T205433.017632",
+      "output_format_version": "2.0.0",
+      "duration": 58.64338231086731,
+      "message": null,
+      "errors": [
+        "Path: setup.py"
+      ],
+      "warnings": [],
+      "extra_data": {
+        "system_environment": {
+          "operating_system": "linux",
+          "cpu_architecture": "64",
+          "platform": "Linux-5.10.102.1-microsoft-standard-WSL2-x86_64-with-glibc2.29",
+          "platform_version": "#1 SMP Wed Mar 2 00:30:59 UTC 2022",
+          "python_version": "3.8.10 (default, Mar 15 2022, 12:22:08) \n[GCC 9.4.0]"
+        },
+        "spdx_license_list_version": "3.16",
+        "files_count": 1
+      }
+    }
+  ],
+  "dependencies": [],
+  "packages": [],
+  "files": [
+    {
+      "path": "setup.py",
+      "type": "file",
+      "name": "setup.py",
+      "base_name": "setup",
+      "extension": ".py",
+      "size": 92,
+      "date": "2022-05-09",
+      "sha1": "b02b187573d33865b70aedf4c2fd944f12175b5e",
+      "md5": "a62572f3226f8c1686a5130b84e7dc64",
+      "sha256": "9eab88ae585180329efa80f37d40691fe12a30658b6bb9a3635ff780f00ca624",
+      "mime_type": "text/x-script.python",
+      "file_type": "Python script, ASCII text executable",
+      "programming_language": "Python",
+      "is_binary": false,
+      "is_text": true,
+      "is_archive": false,
+      "is_media": false,
+      "is_source": true,
+      "is_script": true,
+      "licenses": [],
+      "license_expressions": [],
+      "percentage_of_license_text": 0,
+      "copyrights": [],
+      "holders": [],
+      "authors": [],
+      "package_data": [
+        {
+          "type": "pypi",
+          "namespace": null,
+          "name": null,
+          "version": null,
+          "qualifiers": {},
+          "subpath": null,
+          "primary_language": "Python",
+          "description": "",
+          "release_date": null,
+          "parties": [],
+          "keywords": [],
+          "homepage_url": null,
+          "download_url": null,
+          "size": null,
+          "sha1": null,
+          "md5": null,
+          "sha256": null,
+          "sha512": null,
+          "bug_tracking_url": null,
+          "code_view_url": null,
+          "vcs_url": null,
+          "copyright": null,
+          "license_expression": null,
+          "declared_license": {},
+          "notice_text": null,
+          "source_packages": [],
+          "file_references": [],
+          "extra_data": {},
+          "dependencies": [],
+          "repository_homepage_url": null,
+          "repository_download_url": null,
+          "api_data_url": null,
+          "datasource_id": "pypi_setup_py",
+          "purl": null
+        }
+      ],
+      "for_packages": [],
+      "analysis_priority": "1",
+      "file_category": "source",
+      "file_subcategory": "python",
+      "files_count": 0,
+      "dirs_count": 0,
+      "size_count": 0,
+      "scan_errors": [
+        "create_package_and_deps: Failed to assemble PackageData: PackageData(type='pypi', namespace=None, name=None, version=None, datasource_id='pypi_setup_py'): \n 'NoneType' object has no attribute 'siblings'"
+      ]
+    }
+  ]
+}

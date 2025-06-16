@@ -1,0 +1,238 @@
+[
+    {
+        "input_purl": "pkg:nginx/nginx@0.8.9?os=windows",
+        "vuln_details": {
+            "url": "http://public.vulnerablecode.io/api/packages/161168",
+            "purl": "pkg:nginx/nginx@0.8.9?os=windows",
+            "type": "nginx",
+            "namespace": "",
+            "name": "nginx",
+            "version": "0.8.9",
+            "qualifiers": {
+                "os": "windows"
+            },
+            "subpath": "",
+            "next_non_vulnerable_version": "1.2.1",
+            "latest_non_vulnerable_version": "1.3.1",
+            "affected_by_vulnerabilities": [
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/28",
+                    "vulnerability_id": "VCID-6qxq-zyzf-aaar",
+                    "summary": "Vulnerabilities with Windows 8.3 filename pseudonyms",
+                    "references": [],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/72",
+                            "purl": "pkg:nginx/nginx@0.8.33?os=windows",
+                            "is_vulnerable": true,
+                            "affected_by_vulnerabilities": [
+                                {
+                                    "vulnerability": "VCID-83uc-4ghj-aaaq"
+                                },
+                                {
+                                    "vulnerability": "VCID-fqym-j77g-aaac"
+                                },
+                                {
+                                    "vulnerability": "VCID-sqx7-1q2d-aaak"
+                                }
+                            ],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:nginx/nginx@0.8.33%3Fos=windows"
+                        }
+                    ],
+                    "aliases": [
+                        "CORE-2010-0121"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-6qxq-zyzf-aaar"
+                },
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/26",
+                    "vulnerability_id": "VCID-83uc-4ghj-aaaq",
+                    "summary": "Vulnerabilities with invalid UTF-8 sequence on Windows",
+                    "references": [
+                        {
+                            "reference_url": "http://www.exploit-db.com/exploits/13818/",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "http://www.exploit-db.com/exploits/13818/"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+                            "reference_id": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+                            "scores": [],
+                            "url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2010-2266",
+                            "reference_id": "CVE-2010-2266",
+                            "scores": [
+                                {
+                                    "value": "5.0",
+                                    "scoring_system": "cvssv2",
+                                    "scoring_elements": "AV:N/AC:L/Au:N/C:N/I:N/A:P"
+                                }
+                            ],
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-2266"
+                        }
+                    ],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/67",
+                            "purl": "pkg:nginx/nginx@0.8.41?os=windows",
+                            "is_vulnerable": true,
+                            "affected_by_vulnerabilities": [
+                                {
+                                    "vulnerability": "VCID-sqx7-1q2d-aaak"
+                                }
+                            ],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:nginx/nginx@0.8.41%3Fos=windows"
+                        }
+                    ],
+                    "aliases": [
+                        "CVE-2010-2266"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-83uc-4ghj-aaaq"
+                },
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/27",
+                    "vulnerability_id": "VCID-fqym-j77g-aaac",
+                    "summary": "Vulnerabilities with Windows file default stream",
+                    "references": [
+                        {
+                            "reference_url": "http://spa-s3c.blogspot.com/2010/06/full-responsible-disclosurenginx-engine.html",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "http://spa-s3c.blogspot.com/2010/06/full-responsible-disclosurenginx-engine.html"
+                        },
+                        {
+                            "reference_url": "http://www.exploit-db.com/exploits/13818",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "http://www.exploit-db.com/exploits/13818"
+                        },
+                        {
+                            "reference_url": "http://www.exploit-db.com/exploits/13822",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "http://www.exploit-db.com/exploits/13822"
+                        },
+                        {
+                            "reference_url": "http://www.securityfocus.com/bid/40760",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "http://www.securityfocus.com/bid/40760"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2010-2263",
+                            "reference_id": "CVE-2010-2263",
+                            "scores": [
+                                {
+                                    "value": "5.0",
+                                    "scoring_system": "cvssv2",
+                                    "scoring_elements": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+                                }
+                            ],
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-2263"
+                        }
+                    ],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/66",
+                            "purl": "pkg:nginx/nginx@0.8.40?os=windows",
+                            "is_vulnerable": true,
+                            "affected_by_vulnerabilities": [
+                                {
+                                    "vulnerability": "VCID-83uc-4ghj-aaaq"
+                                },
+                                {
+                                    "vulnerability": "VCID-sqx7-1q2d-aaak"
+                                }
+                            ],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:nginx/nginx@0.8.40%3Fos=windows"
+                        }
+                    ],
+                    "aliases": [
+                        "CVE-2010-2263"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-fqym-j77g-aaac"
+                },
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/22",
+                    "vulnerability_id": "VCID-sqx7-1q2d-aaak",
+                    "summary": "Vulnerabilities with Windows directory aliases",
+                    "references": [
+                        {
+                            "reference_url": "http://english.securitylab.ru/lab/PT-2012-06",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "http://english.securitylab.ru/lab/PT-2012-06"
+                        },
+                        {
+                            "reference_url": "http://mailman.nginx.org/pipermail/nginx-announce/2012/000086.html",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "medium",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "http://mailman.nginx.org/pipermail/nginx-announce/2012/000086.html"
+                        },
+                        {
+                            "reference_url": "http://nginx.org/en/security_advisories.html",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "http://nginx.org/en/security_advisories.html"
+                        },
+                        {
+                            "reference_url": "https://mailman.nginx.org/pipermail/nginx-announce/2012/000086.html",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "medium",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://mailman.nginx.org/pipermail/nginx-announce/2012/000086.html"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2011-4963",
+                            "reference_id": "CVE-2011-4963",
+                            "scores": [
+                                {
+                                    "value": "5.0",
+                                    "scoring_system": "cvssv2",
+                                    "scoring_elements": "AV:N/AC:L/Au:N/C:P/I:N/A:N"
+                                }
+                            ],
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-4963"
+                        }
+                    ],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/56",
+                            "purl": "pkg:nginx/nginx@1.2.1?os=windows",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:nginx/nginx@1.2.1%3Fos=windows"
+                        },
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/55",
+                            "purl": "pkg:nginx/nginx@1.3.1?os=windows",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:nginx/nginx@1.3.1%3Fos=windows"
+                        }
+                    ],
+                    "aliases": [
+                        "CVE-2011-4963"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-sqx7-1q2d-aaak"
+                }
+            ],
+            "fixing_vulnerabilities": [],
+            "resource_url": "http://public.vulnerablecode.io/packages/pkg:nginx/nginx@0.8.9%3Fos=windows"
+        }
+    }
+]

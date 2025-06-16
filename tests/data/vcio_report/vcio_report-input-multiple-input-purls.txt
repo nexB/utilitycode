@@ -1,0 +1,5 @@
+pkg:composer/0377/fastadmin-tp6@1.0.0
+pkg:composer/0377/fastadmin-tp6@2.0.1
+pkg:maven/com.h2database/h2@2.1.214
+pkg:maven/org.springframework.boot/spring-boot@2.7.16
+pkg:npm/yaml@1.10.2

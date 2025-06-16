@@ -1,0 +1,694 @@
+[
+    {
+        "input_purl": "pkg:composer/0377/fastadmin-tp6@1.0.0",
+        "vuln_details": {
+            "url": "http://public.vulnerablecode.io/api/packages/129123",
+            "purl": "pkg:composer/0377/fastadmin-tp6@1.0.0",
+            "type": "composer",
+            "namespace": "0377",
+            "name": "fastadmin-tp6",
+            "version": "1.0.0",
+            "qualifiers": {},
+            "subpath": "",
+            "next_non_vulnerable_version": "2.0.1",
+            "latest_non_vulnerable_version": "2.0.1",
+            "affected_by_vulnerabilities": [
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/11383",
+                    "vulnerability_id": "VCID-mt95-hskw-aaaj",
+                    "summary": "SQL Injection\nIn fastadmin-tp6 v1.0, in the file `app/admin/controller/Ajax.php` the 'table' parameter passed is not filtered so a malicious parameter can be passed for SQL injection.",
+                    "references": [
+                        {
+                            "reference_url": "https://github.com/che-my/fastadmin-tp6/issues/2",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "https://github.com/che-my/fastadmin-tp6/issues/2"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:fastadmin-tp6_project:fastadmin-tp6:1.0:*:*:*:*:*:*:*",
+                            "reference_id": "cpe:2.3:a:fastadmin-tp6_project:fastadmin-tp6:1.0:*:*:*:*:*:*:*",
+                            "scores": [],
+                            "url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:fastadmin-tp6_project:fastadmin-tp6:1.0:*:*:*:*:*:*:*"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-21667",
+                            "reference_id": "CVE-2020-21667",
+                            "scores": [
+                                {
+                                    "value": "6.5",
+                                    "scoring_system": "cvssv2",
+                                    "scoring_elements": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+                                },
+                                {
+                                    "value": "7.2",
+                                    "scoring_system": "cvssv3",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+                                }
+                            ],
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-21667"
+                        }
+                    ],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/129124",
+                            "purl": "pkg:composer/0377/fastadmin-tp6@2.0.1",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:composer/0377/fastadmin-tp6@2.0.1"
+                        }
+                    ],
+                    "aliases": [
+                        "CVE-2020-21667"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-mt95-hskw-aaaj"
+                }
+            ],
+            "fixing_vulnerabilities": [],
+            "resource_url": "http://public.vulnerablecode.io/packages/pkg:composer/0377/fastadmin-tp6@1.0.0"
+        }
+    },
+    {
+        "input_purl": "pkg:composer/0377/fastadmin-tp6@2.0.1",
+        "vuln_details": {
+            "url": "http://public.vulnerablecode.io/api/packages/129124",
+            "purl": "pkg:composer/0377/fastadmin-tp6@2.0.1",
+            "type": "composer",
+            "namespace": "0377",
+            "name": "fastadmin-tp6",
+            "version": "2.0.1",
+            "qualifiers": {},
+            "subpath": "",
+            "next_non_vulnerable_version": null,
+            "latest_non_vulnerable_version": null,
+            "affected_by_vulnerabilities": [],
+            "fixing_vulnerabilities": [
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/11383",
+                    "vulnerability_id": "VCID-mt95-hskw-aaaj",
+                    "summary": "SQL Injection\nIn fastadmin-tp6 v1.0, in the file `app/admin/controller/Ajax.php` the 'table' parameter passed is not filtered so a malicious parameter can be passed for SQL injection.",
+                    "references": [
+                        {
+                            "reference_url": "https://github.com/che-my/fastadmin-tp6/issues/2",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "https://github.com/che-my/fastadmin-tp6/issues/2"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:fastadmin-tp6_project:fastadmin-tp6:1.0:*:*:*:*:*:*:*",
+                            "reference_id": "cpe:2.3:a:fastadmin-tp6_project:fastadmin-tp6:1.0:*:*:*:*:*:*:*",
+                            "scores": [],
+                            "url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:fastadmin-tp6_project:fastadmin-tp6:1.0:*:*:*:*:*:*:*"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2020-21667",
+                            "reference_id": "CVE-2020-21667",
+                            "scores": [
+                                {
+                                    "value": "6.5",
+                                    "scoring_system": "cvssv2",
+                                    "scoring_elements": "AV:N/AC:L/Au:S/C:P/I:P/A:P"
+                                },
+                                {
+                                    "value": "7.2",
+                                    "scoring_system": "cvssv3",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+                                }
+                            ],
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-21667"
+                        }
+                    ],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/129124",
+                            "purl": "pkg:composer/0377/fastadmin-tp6@2.0.1",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:composer/0377/fastadmin-tp6@2.0.1"
+                        }
+                    ],
+                    "aliases": [
+                        "CVE-2020-21667"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-mt95-hskw-aaaj"
+                }
+            ],
+            "resource_url": "http://public.vulnerablecode.io/packages/pkg:composer/0377/fastadmin-tp6@2.0.1"
+        }
+    },
+    {
+        "input_purl": "pkg:maven/com.h2database/h2@2.1.214",
+        "vuln_details": {
+            "url": "http://public.vulnerablecode.io/api/packages/547994",
+            "purl": "pkg:maven/com.h2database/h2@2.1.214",
+            "type": "maven",
+            "namespace": "com.h2database",
+            "name": "h2",
+            "version": "2.1.214",
+            "qualifiers": {},
+            "subpath": "",
+            "next_non_vulnerable_version": "2.2.220",
+            "latest_non_vulnerable_version": "2.2.220",
+            "affected_by_vulnerabilities": [
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/426578",
+                    "vulnerability_id": "VCID-j93f-z8na-aaaq",
+                    "summary": "Password exposure in H2 Database ",
+                    "references": [
+                        {
+                            "reference_url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45868",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-45868"
+                        },
+                        {
+                            "reference_url": "https://github.com/h2database/h2database",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.8",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/h2database/h2database"
+                        },
+                        {
+                            "reference_url": "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.8",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/h2database/h2database/blob/96832bf5a97cdc0adc1f2066ed61c54990d66ab5/h2/src/main/org/h2/server/web/WebServer.java#L346-L347"
+                        },
+                        {
+                            "reference_url": "https://github.com/h2database/h2database/commit/581ed18ff9d6b3761d851620ed88a3994a351a0d",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.8",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/h2database/h2database/commit/581ed18ff9d6b3761d851620ed88a3994a351a0d"
+                        },
+                        {
+                            "reference_url": "https://github.com/h2database/h2database/issues/3686",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.8",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/h2database/h2database/issues/3686"
+                        },
+                        {
+                            "reference_url": "https://github.com/h2database/h2database/pull/3833",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.8",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/h2database/h2database/pull/3833"
+                        },
+                        {
+                            "reference_url": "https://github.com/h2database/h2database/releases/tag/version-2.2.220",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.8",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/h2database/h2database/releases/tag/version-2.2.220"
+                        },
+                        {
+                            "reference_url": "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.8",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://sites.google.com/sonatype.com/vulnerabilities/sonatype-2022-6243"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:h2database:h2:*:*:*:*:*:*:*:*",
+                            "reference_id": "cpe:2.3:a:h2database:h2:*:*:*:*:*:*:*:*",
+                            "scores": [],
+                            "url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:h2database:h2:*:*:*:*:*:*:*:*"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2022-45868",
+                            "reference_id": "CVE-2022-45868",
+                            "scores": [
+                                {
+                                    "value": "7.8",
+                                    "scoring_system": "cvssv3",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+                                }
+                            ],
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-45868"
+                        },
+                        {
+                            "reference_url": "https://github.com/advisories/GHSA-22wj-vf5f-wrvj",
+                            "reference_id": "GHSA-22wj-vf5f-wrvj",
+                            "scores": [
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "cvssv3.1_qr",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/advisories/GHSA-22wj-vf5f-wrvj"
+                        }
+                    ],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/639784",
+                            "purl": "pkg:maven/com.h2database/h2@2.2.220",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:maven/com.h2database/h2@2.2.220"
+                        }
+                    ],
+                    "aliases": [
+                        "CVE-2022-45868",
+                        "GHSA-22wj-vf5f-wrvj"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-j93f-z8na-aaaq"
+                }
+            ],
+            "fixing_vulnerabilities": [],
+            "resource_url": "http://public.vulnerablecode.io/packages/pkg:maven/com.h2database/h2@2.1.214"
+        }
+    },
+    {
+        "input_purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.16",
+        "vuln_details": {
+            "url": "http://public.vulnerablecode.io/api/packages/786120",
+            "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.16",
+            "type": "maven",
+            "namespace": "org.springframework.boot",
+            "name": "spring-boot",
+            "version": "2.7.16",
+            "qualifiers": {},
+            "subpath": "",
+            "next_non_vulnerable_version": "2.7.18",
+            "latest_non_vulnerable_version": "3.1.6",
+            "affected_by_vulnerabilities": [
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/505729",
+                    "vulnerability_id": "VCID-r99e-4rda-aaaq",
+                    "summary": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator\u00a0is on the classpath",
+                    "references": [
+                        {
+                            "reference_url": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2023-34055.json",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "6.5",
+                                    "scoring_system": "cvssv3",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+                                }
+                            ],
+                            "url": "https://access.redhat.com/hydra/rest/securitydata/cve/CVE-2023-34055.json"
+                        },
+                        {
+                            "reference_url": "https://github.com/spring-projects/spring-boot",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "5.3",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                                },
+                                {
+                                    "value": "MODERATE",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/spring-projects/spring-boot"
+                        },
+                        {
+                            "reference_url": "https://github.com/spring-projects/spring-boot/commit/5490e73922b37a7f0bdde43eb318cb1038b45d60",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "5.3",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                                },
+                                {
+                                    "value": "MODERATE",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/spring-projects/spring-boot/commit/5490e73922b37a7f0bdde43eb318cb1038b45d60"
+                        },
+                        {
+                            "reference_url": "https://security.netapp.com/advisory/ntap-20231221-0010",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "5.3",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                                },
+                                {
+                                    "value": "MODERATE",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://security.netapp.com/advisory/ntap-20231221-0010"
+                        },
+                        {
+                            "reference_url": "https://security.netapp.com/advisory/ntap-20231221-0010/",
+                            "reference_id": "",
+                            "scores": [],
+                            "url": "https://security.netapp.com/advisory/ntap-20231221-0010/"
+                        },
+                        {
+                            "reference_url": "https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-6226862",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "5.3",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                                },
+                                {
+                                    "value": "MODERATE",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-6226862"
+                        },
+                        {
+                            "reference_url": "https://spring.io/security/cve-2023-34055",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "5.3",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+                                },
+                                {
+                                    "value": "MODERATE",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://spring.io/security/cve-2023-34055"
+                        },
+                        {
+                            "reference_url": "https://bugzilla.redhat.com/show_bug.cgi?id=2251917",
+                            "reference_id": "2251917",
+                            "scores": [],
+                            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2251917"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:vmware:spring_boot:*:*:*:*:*:*:*:*",
+                            "reference_id": "cpe:2.3:a:vmware:spring_boot:*:*:*:*:*:*:*:*",
+                            "scores": [],
+                            "url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:vmware:spring_boot:*:*:*:*:*:*:*:*"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34055",
+                            "reference_id": "CVE-2023-34055",
+                            "scores": [
+                                {
+                                    "value": "6.5",
+                                    "scoring_system": "cvssv3",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
+                                }
+                            ],
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34055"
+                        },
+                        {
+                            "reference_url": "https://github.com/advisories/GHSA-jjfh-589g-3hjx",
+                            "reference_id": "GHSA-jjfh-589g-3hjx",
+                            "scores": [
+                                {
+                                    "value": "MODERATE",
+                                    "scoring_system": "cvssv3.1_qr",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/advisories/GHSA-jjfh-589g-3hjx"
+                        },
+                        {
+                            "reference_url": "https://access.redhat.com/errata/RHSA-2024:3354",
+                            "reference_id": "RHSA-2024:3354",
+                            "scores": [],
+                            "url": "https://access.redhat.com/errata/RHSA-2024:3354"
+                        }
+                    ],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/757700",
+                            "purl": "pkg:maven/org.springframework.boot/spring-boot@2.7.18",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:maven/org.springframework.boot/spring-boot@2.7.18"
+                        },
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/757699",
+                            "purl": "pkg:maven/org.springframework.boot/spring-boot@3.0.13",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:maven/org.springframework.boot/spring-boot@3.0.13"
+                        },
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/757697",
+                            "purl": "pkg:maven/org.springframework.boot/spring-boot@3.1.6",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:maven/org.springframework.boot/spring-boot@3.1.6"
+                        }
+                    ],
+                    "aliases": [
+                        "CVE-2023-34055",
+                        "GHSA-jjfh-589g-3hjx"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-r99e-4rda-aaaq"
+                }
+            ],
+            "fixing_vulnerabilities": [],
+            "resource_url": "http://public.vulnerablecode.io/packages/pkg:maven/org.springframework.boot/spring-boot@2.7.16"
+        }
+    },
+    {
+        "input_purl": "pkg:npm/yaml@1.10.2",
+        "vuln_details": {
+            "url": "http://public.vulnerablecode.io/api/packages/601525",
+            "purl": "pkg:npm/yaml@1.10.2",
+            "type": "npm",
+            "namespace": "",
+            "name": "yaml",
+            "version": "1.10.2",
+            "qualifiers": {},
+            "subpath": "",
+            "next_non_vulnerable_version": "2.2.2",
+            "latest_non_vulnerable_version": "2.3.0-0",
+            "affected_by_vulnerabilities": [
+                {
+                    "url": "http://public.vulnerablecode.io/api/vulnerabilities/456956",
+                    "vulnerability_id": "VCID-27e3-5cs9-aaar",
+                    "summary": "Uncaught Exception in yaml",
+                    "references": [
+                        {
+                            "reference_url": "https://ftp.suse.com/pub/projects/security/yaml/suse-cvss-scores.yaml",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "2.1",
+                                    "scoring_system": "cvssv2",
+                                    "scoring_elements": "AV:N/AC:H/Au:S/C:N/I:P/A:N"
+                                },
+                                {
+                                    "value": "4.4",
+                                    "scoring_system": "cvssv3",
+                                    "scoring_elements": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:L"
+                                },
+                                {
+                                    "value": "2.5",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L"
+                                }
+                            ],
+                            "url": "https://ftp.suse.com/pub/projects/security/yaml/suse-cvss-scores.yaml"
+                        },
+                        {
+                            "reference_url": "https://github.com/eemeli/yaml",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.5",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/eemeli/yaml"
+                        },
+                        {
+                            "reference_url": "https://github.com/eemeli/yaml/commit/984f5781ffd807e58cad3b5c8da1f940dab75fba",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.5",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/eemeli/yaml/commit/984f5781ffd807e58cad3b5c8da1f940dab75fba"
+                        },
+                        {
+                            "reference_url": "https://huntr.dev/bounties/4b494e99-5a3e-40d9-8678-277f3060e96c",
+                            "reference_id": "",
+                            "scores": [
+                                {
+                                    "value": "7.5",
+                                    "scoring_system": "cvssv3.1",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                                },
+                                {
+                                    "value": "HIGH",
+                                    "scoring_system": "generic_textual",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://huntr.dev/bounties/4b494e99-5a3e-40d9-8678-277f3060e96c"
+                        },
+                        {
+                            "reference_url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1035580",
+                            "reference_id": "1035580",
+                            "scores": [],
+                            "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1035580"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:yaml_project:yaml:*:*:*:*:*:go:*:*",
+                            "reference_id": "cpe:2.3:a:yaml_project:yaml:*:*:*:*:*:go:*:*",
+                            "scores": [],
+                            "url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:yaml_project:yaml:*:*:*:*:*:go:*:*"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:yaml_project:yaml:*:*:*:*:*:node.js:*:*",
+                            "reference_id": "cpe:2.3:a:yaml_project:yaml:*:*:*:*:*:node.js:*:*",
+                            "scores": [],
+                            "url": "https://nvd.nist.gov/vuln/search/results?adv_search=true&isCpeNameSearch=true&query=cpe:2.3:a:yaml_project:yaml:*:*:*:*:*:node.js:*:*"
+                        },
+                        {
+                            "reference_url": "https://nvd.nist.gov/vuln/detail/CVE-2023-2251",
+                            "reference_id": "CVE-2023-2251",
+                            "scores": [
+                                {
+                                    "value": "7.5",
+                                    "scoring_system": "cvssv3",
+                                    "scoring_elements": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+                                }
+                            ],
+                            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-2251"
+                        },
+                        {
+                            "reference_url": "https://github.com/advisories/GHSA-f9xv-q969-pqx4",
+                            "reference_id": "GHSA-f9xv-q969-pqx4",
+                            "scores": [
+                                {
+                                    "value": "MODERATE",
+                                    "scoring_system": "cvssv3.1_qr",
+                                    "scoring_elements": ""
+                                }
+                            ],
+                            "url": "https://github.com/advisories/GHSA-f9xv-q969-pqx4"
+                        }
+                    ],
+                    "fixed_packages": [
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/601475",
+                            "purl": "pkg:npm/yaml@2.2.2",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:npm/yaml@2.2.2"
+                        },
+                        {
+                            "url": "http://public.vulnerablecode.io/api/packages/611186",
+                            "purl": "pkg:npm/yaml@2.3.0-0",
+                            "is_vulnerable": false,
+                            "affected_by_vulnerabilities": [],
+                            "resource_url": "http://public.vulnerablecode.io/packages/pkg:npm/yaml@2.3.0-0"
+                        }
+                    ],
+                    "aliases": [
+                        "CVE-2023-2251",
+                        "GHSA-f9xv-q969-pqx4"
+                    ],
+                    "resource_url": "http://public.vulnerablecode.io/vulnerabilities/VCID-27e3-5cs9-aaar"
+                }
+            ],
+            "fixing_vulnerabilities": [],
+            "resource_url": "http://public.vulnerablecode.io/packages/pkg:npm/yaml@1.10.2"
+        }
+    }
+]

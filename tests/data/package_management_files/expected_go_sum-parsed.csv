@@ -1,0 +1,4 @@
+Resource,package__homepage_url,package__version,package__owner,package__name,package__type,package__declared_license
+.\tests\data\package_management_files\go.sum,https://github.com/chromedp/chromedp,v 0.9.1,chromedp,chromedp,golang,MIT
+.\tests\data\package_management_files\go.sum,https://golang.org/x/xerrors,v 0.0.0-20191204190536-9bdfabe68543,,xerrors,golang,BSD-3-Clause
+.\tests\data\package_management_files\go.sum,https://google.golang.org/appengine,v 1.6.7,,appengine,golang,Apache-2.0

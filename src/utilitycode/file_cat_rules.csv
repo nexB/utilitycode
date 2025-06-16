@@ -1,0 +1,229 @@
+class,order,analysis_priority,file_category,file_subcategory,rule_type,rule,condition
+AboutFile,0,4,about,,extension,extension: .ABOUT,extension: endswith
+ArchiveAndroid,10,1,archive,Android,extension,"extension: .apk, .aar",extension: in
+ArchiveDebian,10,1,archive,debian,extension,extension: .deb,extension: in
+ArchiveGem,10,1,archive,gem,extension,extension: .gem,extension: in
+ArchiveGeneral,10,1,archive,general,extension,"extension: .7z, .7zip, .bz, .bz2, .bzip, .gz, .gzi, .tar, .tar.gz, .tgz, .xz, .zip, .cpio, .lha, .pea, .rar, .s7z, .tbz2, .tlz, .zipx",extension: in
+ArchiveIos,10,1,archive,iOS,extension,extension: .ipa,extension: in
+ArchiveLibrary,10,1,archive,library,extension,"extension: .a, .ar",extension: in
+ArchiveMozilla,10,1,archive,mozilla,extension,"extension: .mar, .xpi",extension: in
+ArchivePython,10,1,archive,python wheel,extension,"extension: .whl, .egg",extension: in
+ArchiveRpm,10,1,archive,rpm,extension,extension: .rpm,extension: in
+ArchiveShell,10,1,archive,shell_archive,extension,extension: .shar,extension: in
+ArchiveWindows,10,1,archive,cabinet_file,extension,extension: .cab,extension: in
+BinaryAr,10,1,binary,ar,mime_type,mime_type: application/x-archive,mime_type: in
+BinaryElf,20,1,binary,elf-binary,file_type,file_type: elf,file_type: startswith
+BinaryElfExec,10,1,binary,elf-exec,mime_type,mime_type: application/x-executable,mime_type: in
+BinaryElfKo,10,1,binary,elf-ko,mime_type AND extension,"mime_type: application/x-object
+extension: .ko","mime_type: in
+extension: startswith"
+BinaryElfO,10,1,binary,elf-o,mime_type AND extension,"mime_type: application/x-object
+extension: .o","mime_type: in
+extension: endswith"
+BinaryElfSo,10,1,binary,elf-so,mime_type,mime_type: application/x-sharedlib,mime_type: in
+BinaryGeneral,10,2,binary,data,extension,extension: .bin,extension: in
+BinaryJava,10,1,binary,java,extension,"extension: .class, .jar, .ear, .sar, .war",extension: in
+BinaryMacosx,10,1,binary,macosx,mime_type,mime_type: application/x-mach-binary,mime_type: in
+BinaryPython,10,1,binary,Python,extension,"extension: .pyc, .pyo",extension: in
+BinaryWindows,10,1,binary,windows,mime_type,mime_type: application/x-dosexec,mime_type: in
+BinaryWindows,10,1,binary,windows,extension,"extension: .exe, .msi",extension: in
+BuildBazel,0,5,build,Bazel,extension,extension: .bzl,extension: in
+BuildBazel,0,5,build,Bazel,name AND type,"name: build.bazel
+type: file","name: in
+type: equal"
+BuildBuck,0,5,build,BUCK,name AND type,"name: buck
+type: file","name: in
+type: equal"
+BuildDocker,0,2,build,Docker,name AND type,"name: dockerfile
+type: file","name: substring
+type: equal"
+BuildMake,0,5,build,make,name AND type,"name: makefile
+type: file","name: substring
+type: equal"
+BuildQt,10,5,build,Qt,extension,"extension: .pri, .pro",extension: in
+Cache,0,95,Cache,,extension,extension: .cache,extension: in
+Cache,20,95,Cache,,path,path: /cache/,path: substring
+Calendar,10,91,calendar,,extension,extension: .ics,extension: in
+Certificate,10,3,certificate,,extension,"extension: .crt, .der, .pem",extension: in
+Checksum,0,3,checksum,,extension AND type,"extension: .checksum, .sha1, .md5, .sha256, .sha512
+type: file","extension: in
+type: equal"
+ConfigEncrypt,10,3,config,encrpyted,extension,extension: .enc,extension: in
+ConfigGeneral,10,3,config,general,extension,"extension: .cfg, .conf, .config, .jxs, .properties, .yaml, .yml, ._yaml, .inc, .localdev, .local, .ncfg, .netrc, .rule, .profile, .po",extension: in
+ConfigInitialPeriod,10,96,config,initial_period,name AND type,"name: .
+type: file","name: startswith
+type: equal"
+ConfigMacro,10,3,config,macro,extension,extension: .m4,extension: in
+ConfigPython,10,3,config,Python,name,"name: __init__.py, pyproject.toml",name: in
+ConfigPython,10,3,config,Python,extension,extension: .pth,extension: in
+ConfigTemplate,10,3,config,template,extension,extension: .tmpl,extension: in
+ConfigVisualCpp,10,3,config,Visual-CPP,extension,"extension: .vcxproj, .vcproj",extension: in
+ConfigXcode,0,3,config,xcode,name AND type,"name: info.plist
+type: file","name: in
+type: equal"
+ConfigXcode,0,3,config,xcode,extension,extension: .xcodeproj,extension: in
+ConfigXml,20,3,config,xml,extension,"extension: .dtd, .xml, .xsd, .xsl, .xslt, .lcl, .xlf, .iml",extension: in
+DataJson,10,6,data,json,extension,extension: .json,extension: in
+DataJson,10,6,data,json,file_type,file_type: JSON data,file_type: in
+DataProtoBuf,10,2,data,ProtoBuf,extension,extension: .proto,extension: in
+DataType,20,5,data,,file_type,file_type: data,file_type: in
+DebugWindows,10,1,debug,windows,extension,extension: .pdb,extension: in
+Diff,10,2,source,diff,extension,extension: .diff,extension: in
+Directory,0,99,directory,,type,type: directory,type: equal
+DiskImage,10,1,binary,image,extension,"extension: .dmg, .iso",extension: in
+DocEmail,0,7,doc,Email Message,extension AND type,"extension: .msg
+type: file","extension: in
+type: equal"
+DocGeneral,20,7,doc,general,extension,"extension: .csv, .doc, .docx, .man, .md, .odp, .ods, .odt, .pdf, .ppt, .pptx,.rtf, .tex, .txt, .xls, .xlsm, .xlsx, .log, .rdoc, .asciidoc, .sln, .rst, .vcf, .wpd, .wps",extension: in
+DocGeneral,20,7,doc,general,name AND type,"name: changelog, changes
+type: file","name: substring
+type: equal"
+DocLicense,0,7,doc,license,name AND type AND programming_language,"name: copying, copyright, license, notice
+type: file
+programming_language: False","name: substring
+type: equal
+programming_language: boolean"
+DocLicense,0,7,doc,license,name AND type AND extension,"name: copying, copyright, license, notice
+type: file
+extension: False","name: substring
+type: equal
+extension: boolean"
+DocReadme,0,7,doc,readme,name AND type AND programming_language,"name: readme
+type: file
+programming_language: False","name: substring
+type: equal
+programming_language: boolean"
+DocReadme,0,7,doc,readme,name AND type AND extension,"name: readme
+type: file
+extension: False","name: substring
+type: equal
+extension: boolean"
+Dpkg,0,90,path,dpkg,path,path:  /var/lib/dpkg/,path: substring
+EBook,30,7,ebook,,extension,"extension: .mobi, .epub, .azw1, .azw3, .azw4, .azw6, .azw, .cbr, .cbz, .ebook",extension: in
+EmptyFile,0,98,empty,,file_type,file_type: empty,file_type: in
+Font,10,1,font,,extension,"extension: .fnt, .otf, .ttf, .woff, .woff2, .eot",extension: in
+FontSVG,10,1,font,,extension AND name,"extension: .svg
+name: font","extension: in
+name: in"
+KeyData,0,50,key,PGP/GPG key,file_type,"file_type: PGP, GPG",file_type: startswith
+KeyData,0,50,key,PGP/GPG key,extension,extension: .key,extension: in
+ManifestBower,0,4,manifest,Bower,name AND type,"name: bower.json
+type: file","name: in
+type: equal"
+ManifestCargo,0,4,manifest,Cargo,name AND type,"name: cargo.toml, cargo.lock
+type: file","name: in
+type: equal"
+ManifestCocoaPod,10,4,manifest,CocoaPod,extension,extension: .podspec,extension: in
+ManifestComposer,0,4,manifest,Composer,name AND type,"name: composer.json, composer.lock
+type: file","name: in
+type: equal"
+ManifestDotNet,0,4,manifest,DotNet,extension AND type,"extension: .resx, .csproj
+type: file","extension: in
+type: equal"
+ManifestGit,0,4,manifest,Git,file_type,file_type: Git,file_type: startswith
+ManifestGolang,0,4,manifest,Golang,name AND type,"name: go.mod, go.sum
+type: file","name: in
+type: equal"
+ManifestGradle,0,4,manifest,Gradle,name AND type,"name: build.gradle
+type: file","name: in
+type: equal"
+ManifestHaxe,0,4,manifest,Haxe,name AND type,"name: haxelib.json
+type: file","name: in
+type: equal"
+ManifestIvy,0,4,manifest,Ivy,name AND type,"name: ivy.xml
+type: file","name: in
+type: equal"
+ManifestJava,0,4,manifest,Java,name,name: manifest.in,name: in
+ManifestMaven,0,4,manifest,maven,name AND type,"name: pom.xml, pom.properties
+type: file","name: in
+type: equal"
+ManifestNpm,0,4,manifest,npm,name AND type,"name: package.json,package-lock.json, yarn.lock
+type: file","name: in
+type: equal"
+ManifestNuGet,10,4,manifest,NuGet,extension,extension: .nuspec,extension: in
+ManifestPyi,0,4,manifest,Python,extension AND type,"extension: .pyi
+type: file","extension: in
+type: equal"
+ManifestPyPi,0,4,manifest,PyPi,name AND type,"name: requirements.txt
+type: file","name: in
+type: equal"
+ManifestPython,0,4,manifest,Python,name,name: MANIFEST.in,name: in
+ManifestRubyGem,0,4,manifest,RubyGem,name AND type,"name: gemfile, gemfile.lock
+type: file","name: in
+type: equal"
+ManifestRubyGem,0,4,manifest,RubyGem,extension,"extension: .gemfile, .gemspec",extension: in
+ManifestStatus,0,4,manifest,status,path,path : dpkg/status,path: endswith
+ManifestStatus,0,4,manifest,status,path AND extension,"path: dpkg/status-old
+extension: .gemfile, .gemspec","path: endswith
+extension: in"
+MediaAudio,10,8,media,audio,extension,"extension: .3pg, .aac, .amr, .awb, .m4a, .mp3,.mpa, .ogg, .opus, .wav, .wma, .aiff, .ape, .au, .flac, .gsm, .it, .m3u, .mid, .pls, .ra, .s3m, .sid, .xm, .3g2, .m4p, .mp2, .nsv, .ogm",extension: in
+MediaImage,20,8,media,image,extension,"extension: .3dm, .3ds, .ai, .bmp, .dds, .dwg, .dxf, .eps, .gif, .gpx, .ico, .jpeg, .jpg, .kml, .kmz, .max, .png, .ps, .psd, .svg, .tga, .thm, .tif, .tiff, .webp, .xcf, .yuv, .mng",extension: in
+MediaVideo,10,8,media,video,extension,"extension: .avi, .h264, .mp4, .mpg, .mpeg, .swf, .wmv, .aaf, .asf, .avchd, .flv, .m2v, .m4v, .mkv, .mov, .mpe, .mpv, .mxf, .ogv, .qt, .rm, .rmvb",extension: in
+Pycache,0,95,cache,pycache,path,"path:  /__pycache__/, /.cache/",path: substring
+PythonPackaging,40,4,metadata,python packaging,path,path: .dist-info/,path: substring
+ScriptAwk,10,3,source,AWK Script,extension,extension: .awk,extension: in
+ScriptBuild,10,5,script,build,extension,"extension: .cmake, .cmakelist",extension: in
+ScriptBuild,10,5,script,build,mime_type,mime_type: text/x-makefile,mime_type: in
+ScriptData,10,3,script,data,extension,"extension: .sql, .psql, .sqc",extension: in
+ScriptPython,10,1,script,python,file_type,file_type: Python script,file_type: startswith
+ScriptShell,10,3,script,bash,extension,"extension: .bash, .bat, .sh, .csh, .ksh, .zsh, .command",extension: in
+ScriptTcl,10,3,script,Tool Common Language,extension,extension: .tcl,extension: in
+Share,20,90,path,share,path,path:  /share/terminfo/,path: substring
+SourceAda,10,1,source,ada,extension,"extension: .ada, .ads",extension: in
+SourceAssembler,10,1,source,assembler,extension,extension: .S,extension: in
+SourceAssembler,10,1,source,assembler,extension,extension: .asm,extension: in
+SourceBasic,20,1,source,basic,extension,extension: .bas,extension: in
+SourceC,20,1,source,c,extension,"extension: .c, .h",extension: in
+SourceC,20,1,source,c,file_type,file_type: C source,file_type: in
+SourceChromiumExtension,20,1,source,chromium,extension,extension: .crx,extension: in
+SourceClojure,10,1,source,clojure,extension,extension: .clj,extension: in
+SourceCOBOL,10,1,source,COBOL,extension,"extension: .cbl, .cob",extension: in
+SourceCoffeeScript,10,1,source,CoffeeScript,extension,extension: .coffee,extension: in
+SourceCpp,10,1,source,c++,extension,"extension: .cpp, .hpp, .cc, .cxx, .hh, .hxx",extension: in
+SourceCpp,10,1,source,c++,extension AND mime_type,"extension: .h
+mime_type: text/x-c++","extension: in
+mime_type: in"
+SourceCpp,10,1,source,c++,file_type,file_type: C++ source,file_type: in
+SourceCsharp,10,1,source,c#,extension,extension: .cs,extension: in
+SourceDetectedProgrammingLanguage,30,2,source,Programming Language detected,programming_language,programming_language: True,programming_language: boolean
+SourceEiffel,10,1,source,eiffel,extension,extension: .e,extension: in
+SourceForth,10,1,source,forth,extension,extension: .fth,extension: in
+SourceFortran,10,1,source,fortran,extension,"extension: .f, .f77, .f90, .for, .ftn",extension: in
+SourceGo,10,1,source,go,extension,extension: .go,extension: in
+SourceHaskell,10,1,source,haskell,extension,"extension: .hs, .lhs",extension: in
+SourceJava,10,1,source,java,extension,"extension: .java, .groovy",extension: in
+SourceJava,10,1,source,java,file_type,file_type: Java source,file_type: startswith
+SourceJavascript,10,1,source,javascript,extension,"extension: .js, .jsx",extension: in
+SourceJavascriptSourceMap,10,1,source,js_map,path,path: .js.map,path: endswith
+SourceJavaserverpage,10,1,source,javaserverpage,extension,extension: .jsp,extension: in
+SourceKotlin,10,1,source,kotlin,extension,extension: .kt,extension: in
+SourceLisp,10,1,source,lisp,extension,"extension: .el, .lisp",extension: in
+SourceLua,10,1,source,lua,extension,extension: .lua,extension: in
+SourceNim,10,1,source,nim,extension,extension: .nim,extension: in
+SourceObjectivec,10,1,source,objectivec,extension,"extension: .m, .mm",extension: in
+SourceObjectivec,10,1,source,objectivec,extension AND mime_type,"extension: .h
+mime_type: text/x-objective-c","extension: in
+mime_type: in"
+SourcePatch,10,2,source,patch,extension,extension: .patch,extension: in
+SourcePerl,10,1,source,perl,extension,"extension: .pl, .pm, .ph",extension: in
+SourcePhp,10,1,source,php,extension,"extension: .php, .php3, .php4, .php5",extension: in
+SourceProC,10,1,source,pro c/c++,extension,extension: .pc,extension: in
+SourcePython,10,1,source,python,extension,extension: .py,extension: in
+SourceRuby,10,1,source,ruby,extension,"extension: .rb, .rake",extension: in
+SourceRust,10,1,source,rust,extension,extension: .rs,extension: in
+SourceScala,10,1,source,scala,extension,extension: .scala,extension: in
+SourceSwift,10,1,source,swift,extension,extension: .swift,extension: in
+SourceTypescript,10,1,source,typescript,extension AND programming_language,"extension: .ts
+programming_language: TypeScript","extension: in
+programming_language: in"
+SourceVB,10,1,source,visual_basic,extension,extension: .vb,extension: in
+TimeZoneData,0,4,timezone data,,file_type,file_type: timezone data,file_type: startswith
+WebCss,10,1,web,css,extension,"extension: .css, .less, .scss",extension: in
+WebHtml,10,3,web,html,extension,"extension: .htm, .html",extension: in
+WebHtml,11,3,web,html,mime_type,mime_type: text/html,mime_type: in
+WebRuby,10,2,web,Ruby,extension,extension: .erb,extension: in
+WebTemplate,20,3,web,template,extension,"extension: .tpl, .twig",extension: in
+WhiteOut,0,98,whiteout,,name AND type,"name:  .wh..wh..opq
+type: file","name: in
+type: equal"
+Zoneinfo,20,90,path,zoneinfo,path,path:   /share/zoneinfo/,path: substring

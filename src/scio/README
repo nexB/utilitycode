@@ -1,0 +1,4 @@
+This directory lists the shell scripts' names and their descriptions for working with SCIO:
+
+ - load_inventories.sh - Creating a set of SCIO projects to run load_inventory for a set of JSON files in a directory
+

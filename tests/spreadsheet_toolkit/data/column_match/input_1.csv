@@ -1,0 +1,4 @@
+Resource,dwarf_source_path
+Sample1.so,path/to/source/foo.c
+Sample2.so,path/to/../source/bar.c
+Sample2.so,path/./source/bar.c

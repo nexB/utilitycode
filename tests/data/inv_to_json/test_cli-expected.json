@@ -1,0 +1,106 @@
+{
+  "files": [
+    {
+      "path": "test/foo/bar/program1",
+      "name": "program1",
+      "license_expressions": [
+        "bsd-new"
+      ],
+      "holders": [
+        {
+          "value": "program1"
+        }
+      ],
+      "packages": [],
+      "components": [
+        {
+          "name": "program1",
+          "version": null,
+          "copyright": "program1",
+          "license_expression": "bsd-new",
+          "homepage_url": "test.program1.com",
+          "download_url": null
+        }
+      ]
+    },
+    {
+      "path": "test/foo/bar/baz",
+      "name": "baz",
+      "license_expressions": [
+        "apache-2.0"
+      ],
+      "holders": [
+        {
+          "value": "baz devs"
+        }
+      ],
+      "packages": [],
+      "components": [
+        {
+          "name": "baz",
+          "version": null,
+          "copyright": "baz devs",
+          "license_expression": "apache-2.0",
+          "homepage_url": null,
+          "download_url": "test.baz.com/baz"
+        }
+      ]
+    },
+    {
+      "path": "test/foo/ext/sample",
+      "name": "sample",
+      "license_expressions": [
+        "mit"
+      ],
+      "holders": [
+        {
+          "value": "sample group"
+        }
+      ],
+      "packages": [],
+      "components": [
+        {
+          "name": "sample",
+          "version": null,
+          "copyright": "sample group",
+          "license_expression": "mit",
+          "homepage_url": "sample.com",
+          "download_url": null
+        }
+      ]
+    },
+    {
+      "path": "test/third-party/@types-node-10.17.19.tgz",
+      "name": "@types-node-10.17.19.tgz",
+      "license_expressions": [
+        "mit"
+      ],
+      "holders": [
+        {
+          "value": "DefinitelyTyped Project"
+        }
+      ],
+      "packages": [
+        {
+          "type": "npm",
+          "namespace": "@types",
+          "name": "node",
+          "version": "v 10.17.19",
+          "homepage_url": "http://definitelytyped.org/",
+          "download_url": "https://registry.npmjs.org/@types/node/-/node-10.17.19.tgz",
+          "copyright": "DefinitelyTyped Project",
+          "license_expression": "mit"
+        }
+      ],
+      "components": []
+    },
+    {
+      "path": null,
+      "name": null,
+      "license_expressions": [],
+      "holders": [],
+      "packages": [],
+      "components": []
+    }
+  ]
+}

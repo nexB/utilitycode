@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<licenses>
+<file-name contentId="45d4ee055bdf34776905c04117951798">/vendor/bin/blah</file-name>
+
+
+<file-content contentId="45d4ee055bdf34776905c04117951798"><![CDATA[
+
+/*-
+ * Copyright (c) blah blah
+ *
+ * This is under a public domain.
+ */
+]]></file-content>
+
+</licenses>

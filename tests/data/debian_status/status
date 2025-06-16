@@ -1,0 +1,28 @@
+Package: 0trace
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 43
+Maintainer: Kali Developers <devel@kali.org>
+Architecture: amd64
+Version: 0.01-3kali1
+Depends: libc6 (>= 2.7), tcpdump
+Description: A traceroute tool that can run within an existing TCP connection.
+ 0trace is traceroute tool that can be run within an existing, open TCP connection,
+ therefore bypassing some types of stateful packet filters with ease.
+Homepage: http://lcamtuf.coredump.cx
+
+Package: 4kvideodownloader
+Status: install ok installed
+Priority: optional
+Section: web
+Installed-Size: 67324
+Maintainer: 4KDownload <support@4kdownload.com>
+Architecture: amd64
+Version: 4.4-10
+Depends: libc6, libstdc++6
+Description: Download online video
+ 4K Video Downloader allows to download video and audio
+ content from YouTube and other services in the high 
+ quality as fast as possible and to save this video on 
+ your computer.

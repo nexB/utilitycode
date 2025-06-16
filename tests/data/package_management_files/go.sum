@@ -1,0 +1,5 @@
+github.com/chromedp/chromedp v0.9.1 h1:CC7cC5p1BeLiiS2gfNNPwp3OaUxtRMBjfiw3E3k6dFA=
+github.com/chromedp/chromedp v0.9.1/go.mod h1:DUgZWRvYoEfgi66CgZ/9Yv+psgi+Sksy5DTScENWjaQ=
+golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543/go.mod h1:I/5z698sn9Ka8TeJc9MKroUUfqBBauWjQqLJ2OPfmY0=
+google.golang.org/appengine v1.6.7 h1:FZR1q0exgwxzPzp/aF+VccGrSfxfPpkBqjIIEq3ru6c=
+google.golang.org/appengine v1.6.7/go.mod h1:8WjMMxjGQR8xUklV/ARdw2HLXBOI7O7uCIDZVag1xfc=

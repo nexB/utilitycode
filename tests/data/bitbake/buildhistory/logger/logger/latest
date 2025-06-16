@@ -1,0 +1,8 @@
+PV = 1.0+intelsdk0
+PR = r0
+RPROVIDES = 
+RDEPENDS = glibc (>= 2.24) libarris-main (>= 1.0) libgcc (>= 6.4.0) libticc (>= 1.0+intelsdk0) slibc (>= 0.9.3)
+RRECOMMENDS = 
+PKGSIZE = 49492
+FILES = /lib/liblogger_ldplugin.so /usr/sbin/logger
+FILELIST = /lib/liblogger_ldplugin.so /usr/sbin/logger
