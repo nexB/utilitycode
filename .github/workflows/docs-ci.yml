@@ -27,6 +27,6 @@ jobs:
         run: make docs-check
 
       - name: Check documentation for style errors
-        run: make doc8 --ignore-path docs/build,docs/_build
+        run: make doc8
 
 
