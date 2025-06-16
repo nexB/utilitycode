@@ -1,14 +1,16 @@
 ================
 nexB UtilityCode
 ================
-UtilityCode is a suite of special utilities for software composition analysis (SCA). 
-These are primarily sandbox-style utilities to complement the more robust tools
-available from AboutCode at:
-    https://github.com/aboutcode-org
-Over time many of these utilities will be incorporated into one or more 
-AboutCode projects. 
+UtilityCode is a suite of special utilities for software composition
+analysis (SCA). These are primarily sandbox-style utilities to complement
+the more robust tools available from AboutCode at:
 
-**Please note that these utilities are not tested or 
+    https://github.com/aboutcode-org
+
+Over time many of these utilities will be incorporated into one or more
+AboutCode projects.
+
+**Please note that these utilities are not tested or
 documented at the same level as we apply to AboutCode projects.**
 
 REQUIREMENTS

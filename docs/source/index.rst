@@ -1,11 +1,14 @@
 UtilityCode Documentation
 =========================
 
-Welcome to UtilityCode Documentation!
+UtilityCode is a suite of special utilities for software composition
+analysis (SCA). These are primarily sandbox-style utilities to complement
+the more robust tools available from AboutCode at:
 
-UtilityCode is a suite of tools for software provenance analysis. This is
-our sandbox for building tools that we can use on projects and many of
-these may be incorporated into our open source projects.
+    https://github.com/aboutcode-org
+
+Over time many of these utilities will be incorporated into one or more
+AboutCode projects.
 
 ----
 
