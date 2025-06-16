@@ -19,7 +19,7 @@ from utilitycode import file_cat, file_cat_resource
 
 from commoncode.testcase import FileBasedTesting
 import csv
-from os.path import dirname, join, abspath
+from os.path import dirname, join
 
 
 file_cat_rules_csv = join(
