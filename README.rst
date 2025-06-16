@@ -18,8 +18,8 @@ version may be pre-installed, open a terminal and type:
 python --version
 
 Note:
-Debian has decided that distutils is not a core python package, so it is not included
-in the last versions of debian and debian-based OSes.
+Debian has decided that distutils is not a core python package, so it is
+not included in the last versions of debian and debian-based OSes.
 
 A solution is to run: `sudo apt install python3-distutils`
 
@@ -97,5 +97,5 @@ agree to the http://developercertificate.org/
 
 LICENSE
 -------
-The UtilityCode is released under the Apache 2.0 license. See the utilitycode.ABOUT
-file for details.
+The UtilityCode is released under the Apache 2.0 license. See the
+utilitycode.ABOUT file for details.
