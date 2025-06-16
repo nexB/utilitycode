@@ -19,6 +19,7 @@ Other Utilities
     Debian Install Path <utilitycode/debian-package-list>
     Extract Source Path from map <utilitycode/extract_source_path_from_maps>
     Inventory to JSON <utilitycode/i2j>
+    JSON to XLSX <utilitycode/json2xlsx>
     LKM <utilitycode/lkm>
     ORT Parser <utilitycode/ort_analyzer_parser>
     Package Management Files Parser <utilitycode/pmf_parser>
