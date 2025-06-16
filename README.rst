@@ -1,10 +1,15 @@
 ================
 nexB UtilityCode
 ================
-UtilityCode is a suite of tools for software provenance analysis. This is
-our sandbox for building tools that we can use on projects and many of
-these may be incorporated into our open source projects.
+UtilityCode is a suite of special utilities for software composition analysis (SCA). 
+These are primarily sandbox-style utilities to complement the more robust tools
+available from AboutCode at:
+    https://github.com/aboutcode-org
+Over time many of these utilities will be incorporated into one or more 
+AboutCode projects. 
 
+**Please note that these utilities are not tested or 
+documented at the same level as we apply to AboutCode projects.**
 
 REQUIREMENTS
 ------------
@@ -19,7 +24,7 @@ python --version
 
 Note:
 Debian has decided that distutils is not a core python package, so it is
-not included in the last versions of debian and debian-based OSes.
+not included in the latest versions of debian and debian-based OSes.
 
 A solution is to run: `sudo apt install python3-distutils`
 
@@ -81,13 +86,6 @@ https://github.com/nexB/utilitycode
 
 For issues, you can use:
 https://github.com/nexB/utilitycode/issues
-
-
-SOURCE CODE
------------
-The UtilityCode is available through GitHub. For the latest version visit:
-https://github.com/nexB/utilitycode
-
 
 HACKING
 -------
