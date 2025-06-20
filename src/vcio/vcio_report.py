@@ -317,14 +317,17 @@ def create_xlsx(purl_vulns, destination):
                                 if ref_scores:
                                     for ref_score in ref_scores:
                                         if (
-                                            ref_score.get(
-                                                "scoring_system") == "cvssv3"
-                                            or ref_score.get("scoring_system")
-                                            == "generic_textual"
+                                            ref_score.get("scoring_system") == "archlinux"
+                                            or ref_score.get("scoring_system") == "cvssv2"
+                                            or ref_score.get("scoring_system") == "cvssv3"
+                                            or ref_score.get("scoring_system") == "cvssv3.1"
+                                            or ref_score.get("scoring_system") == "cvssv3.1_qr"
+                                            or ref_score.get("scoring_system") == "cvssv4"
+                                            or ref_score.get("scoring_system") == "epss"
+                                            or ref_score.get("scoring_system") == "generic_textual"
                                             or ref_score.get("scoring_system") == "rhas"
                                             or ref_score.get("scoring_system") == "rhbs"
-                                            or ref_score.get("scoring_system")
-                                            == "cvssv3.1_qr"
+                                            or ref_score.get("scoring_system") == "ssvc"
                                         ):
                                             vuln_severity = ref_score.get(
                                                 "value")
