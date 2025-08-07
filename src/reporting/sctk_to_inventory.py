@@ -503,6 +503,37 @@ def construct_data(info_dict, package_field_name, report):
     return output_data
 
 
+def extented_package_data(info_list, package_field_name):
+    """
+    Since a single path can have multiple "package_data" entries, we need to
+    ensure each dictionary holds only one. If multiple entries exist for the
+    same path, we split them into separate dictionaries and store them in a
+    list.
+    """
+    updated_list = []
+    for info_dict in info_list:
+        if package_field_name in info_dict:
+            if len(info_dict[package_field_name]) < 2:
+                updated_list.append(info_dict)
+            else:
+                for entry_dict in info_dict[package_field_name]:
+                    updated_dict = {}
+                    updated_dict[package_field_name] = []
+                    # Copy everything except for the package_data field if there
+                    # are multiple package_data entries
+                    for key in info_dict:
+                        if not key == package_field_name:
+                            updated_dict[key] = info_dict[key]
+                    updated_dict[package_field_name].append(entry_dict)
+                    updated_list.append(updated_dict)
+        else:
+            updated_list.append(info_dict)
+    return updated_list
+
+
+
+
+
 @click.command()
 @click.option('--report',
               is_flag=True,
@@ -520,11 +551,16 @@ def cli(report, location, destination):
         raise click.UsageError('ERROR: "The input is not a .json file.')
 
     info_list, concluded_package_field_name = get_data_from_json(location)
+
+    extended_list = extented_package_data(info_list, concluded_package_field_name)
+
     updated_info_list = update_data_field(
-        info_list, concluded_package_field_name, report)
+        extended_list, concluded_package_field_name, report)
+
 
     data = construct_data(
         updated_info_list, concluded_package_field_name, report)
+
 
     wb = bom_utils.create_nexb_bom_from_scancode(data, report)
     click.echo('Saving BOM to %s' % destination)
