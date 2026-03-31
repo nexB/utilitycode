@@ -17,6 +17,7 @@ Other Utilities
     CPP Includes <utilitycode/cpp_includes>
     Debian Copyright Parser <utilitycode/debian-copyright-parser>
     Debian Install Path <utilitycode/debian-package-list>
+    Extract Matched Text for Detected Licenses <utilitycode/extract_lic_matched_text>
     Extract Source Path from map <utilitycode/extract_source_path_from_maps>
     Inventory to JSON <utilitycode/i2j>
     JSON to XLSX <utilitycode/json2xlsx>
