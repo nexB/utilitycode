@@ -88,7 +88,7 @@ def save_to_files(data_dict, output_dir):
     output directory.
     """
     for matched_rule in data_dict:
-        filename = f"{matched_rule}.txt"
+        filename = f"{matched_rule}"
         filepath = os.path.join(output_dir, filename)
 
         with open(filepath, "w", encoding="utf-8") as f:
