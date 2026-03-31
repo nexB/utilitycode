@@ -59,7 +59,6 @@ class TestBomUtils(FileBasedTesting):
             assert result == expected_val
 
     def test_get_column(self):
-        from openpyxl import Workbook
         ws = load_workbook(self.get_test_loc(
             'bom_utils/get_column.xlsx'), read_only=False).active
         column = bom_utils.get_column(ws, 'A')
@@ -74,7 +73,6 @@ class TestBomUtils(FileBasedTesting):
         assert column is None
 
     def test_count_headers(self):
-        from openpyxl import load_workbook
         wb = load_workbook(self.get_test_loc(
             'bom_utils/count_headers.xlsx'), read_only=True)
         input_list = [wb, wb]
@@ -84,7 +82,6 @@ class TestBomUtils(FileBasedTesting):
         assert set(result) == set(expected)
 
     def test_count_sheets(self):
-        from openpyxl import load_workbook
         wb = load_workbook(self.get_test_loc(
             'bom_utils/count_sheets.xlsx'), read_only=True)
         input_list = [wb, wb, wb, wb]
@@ -93,7 +90,6 @@ class TestBomUtils(FileBasedTesting):
         assert set(result) == set(expected)
 
     def test_get_headers(self):
-        from openpyxl import load_workbook
         workbook = load_workbook(self.get_test_loc(
             'bom_utils/headers.xlsx'), read_only=True)
         worksheet = workbook['Sheet1']
@@ -102,7 +98,6 @@ class TestBomUtils(FileBasedTesting):
         assert set(result) == set(expected_headers)
 
     def test_curate_value(self):
-        import time
         import datetime
         test_vals = [
             datetime.datetime(2016, 1, 15, 13, 11, 9,
@@ -131,7 +126,6 @@ class TestBomUtils(FileBasedTesting):
             self.get_test_loc('bom_utils/load/xlsx_load2.xlsx'),
             self.get_test_loc('bom_utils/load/xlsx_load3.xlsx'),
         ]
-        result = []
         loaded_single = bom_utils.load_xlsx_files([multi[0]])
         loaded_multi = bom_utils.load_xlsx_files(multi)
         expected_file_name = ['xlsx_load1.xlsx']

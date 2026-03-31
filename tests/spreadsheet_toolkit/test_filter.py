@@ -35,7 +35,7 @@ def test_simple_include_filtering():
     assert result1 == input
     include_condition2 = [{u'notes': [u'b']}]
     result2 = filter.include_filtering(input, include_condition2)
-    assert result2 == None
+    assert result2 is None
 
 
 def test_or_include_filtering():
@@ -52,7 +52,7 @@ def test_include_filtering_with_true_condition():
     result1 = filter.include_filtering(input1, include_condition)
     assert result1 == input1
     result2 = filter.include_filtering(input2, include_condition)
-    assert result2 == None
+    assert result2 is None
 
 
 def test_and_include_filtering():
@@ -60,7 +60,7 @@ def test_and_include_filtering():
     input1 = {'notes': 'b', 'Resource': '/project/123/'}
     input2 = {'notes': 'b', 'Resource': '/project/123/test.java'}
     result1 = filter.include_filtering(input1, include_condition)
-    assert result1 == None
+    assert result1 is None
     result2 = filter.include_filtering(input2, include_condition)
     assert result2 == input2
 
@@ -69,7 +69,7 @@ def test_simple_exclude_filtering():
     input = {'notes': 'a', 'Resource': '/project/123/sample1.c'}
     exclude_condition1 = [{u'notes': [u'a']}]
     result1 = filter.exclude_filtering(input, exclude_condition1)
-    assert result1 == None
+    assert result1 is None
     exclude_condition2 = [{u'notes': [u'b']}]
     result2 = filter.exclude_filtering(input, exclude_condition2)
     assert result2 == input
@@ -79,7 +79,7 @@ def test_or_exclude_filtering():
     exclude_condition = [{u'notes': [u'a', u'b'], u'Resource': [u'.java']}]
     input1 = {'notes': 'b', 'Resource': '/project/123/'}
     result1 = filter.exclude_filtering(input1, exclude_condition)
-    assert result1 == None
+    assert result1 is None
     input2 = {'notes': 'c', 'Resource': '/project/123/'}
     result2 = filter.exclude_filtering(input2, exclude_condition)
     assert result2 == input2
@@ -90,7 +90,7 @@ def test_exclude_filtering_with_true_condition():
     input1 = {'license_expression': 'mit'}
     input2 = {'license_expression': ''}
     result1 = filter.exclude_filtering(input1, exclude_condition)
-    assert result1 == None
+    assert result1 is None
     result2 = filter.exclude_filtering(input2, exclude_condition)
     assert result2 == input2
 
@@ -101,9 +101,9 @@ def test_and_exclude_filtering():
     input2 = {'notes': 'b', 'Resource': '/project/123/test.java'}
     input3 = {'notes': 'c', 'Resource': '/project/123/test.c'}
     result1 = filter.exclude_filtering(input1, exclude_condition)
-    assert result1 == None
+    assert result1 is None
     result2 = filter.exclude_filtering(input2, exclude_condition)
-    assert result2 == None
+    assert result2 is None
     result3 = filter.exclude_filtering(input3, exclude_condition)
     assert result3 == input3
 
@@ -115,7 +115,7 @@ def test_simple_startswith_filtering():
     assert result1 == input
     startswith_condition2 = [{u'notes': [u'b']}]
     result2 = filter.startswith_filtering(input, startswith_condition2)
-    assert result2 == None
+    assert result2 is None
 
 
 def test_or_startswith_filtering():
@@ -136,11 +136,11 @@ def test_and_startswith_filtering():
     input2 = {'notes': 'b', 'Resource': '/project/123/test.java'}
     input3 = {'notes': 'c', 'Resource': '/project2/123/test.java'}
     result1 = filter.startswith_filtering(input1, startswith_condition)
-    assert result1 == None
+    assert result1 is None
     result2 = filter.startswith_filtering(input2, startswith_condition)
     assert result2 == input2
     result3 = filter.startswith_filtering(input3, startswith_condition)
-    assert result3 == None
+    assert result3 is None
 
 
 def test_simple_endswith_filtering():
@@ -166,11 +166,11 @@ def test_and_endswith_filtering():
     input2 = {'notes': 'b', 'Resource': '/project/123/test.java'}
     input3 = {'notes': 'c', 'Resource': '/project2/123/test.java'}
     result1 = filter.endswith_filtering(input1, endswith_condition)
-    assert result1 == None
+    assert result1 is None
     result2 = filter.endswith_filtering(input2, endswith_condition)
     assert result2 == input2
     result3 = filter.endswith_filtering(input3, endswith_condition)
-    assert result3 == None
+    assert result3 is None
 
 
 def test_simple_equals_filtering():
@@ -180,7 +180,7 @@ def test_simple_equals_filtering():
     assert result1 == input
     equals_condition2 = [{u'notes': [u'b']}]
     result2 = filter.equals_filtering(input, equals_condition2)
-    assert result2 == None
+    assert result2 is None
 
 
 def test_or_equals_filtering():
@@ -199,6 +199,6 @@ def test_and_equals_filtering():
     result1 = filter.equals_filtering(input1, equals_condition)
     assert result1 == input1
     result2 = filter.equals_filtering(input2, equals_condition)
-    assert result2 == None
+    assert result2 is None
     result3 = filter.equals_filtering(input3, equals_condition)
-    assert result3 == None
+    assert result3 is None

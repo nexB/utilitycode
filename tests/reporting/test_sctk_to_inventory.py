@@ -200,12 +200,12 @@ def check_results(actual_result_file, expected_result_file, regen=False):
     # This is another way to compare the row count but does not use the openpyxl 'max_row' method.
     results_count = 0
     for row in results:
-        if not all([cell.value == None for cell in row]):
+        if not all([cell.value is None for cell in row]):
             results_count += 1
 
     expected_count = 0
     for row in expected:
-        if not all([cell.value == None for cell in row]):
+        if not all([cell.value is None for cell in row]):
             expected_count += 1
 
     assert results_count == expected_count

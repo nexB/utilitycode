@@ -278,8 +278,8 @@ class TestPMFParser(FileBasedTesting):
 
         assert result[0].name == 'browser-stdout'
         assert result[0].version == '1.3.1'
-        assert result[0].dev == True
+        assert result[0].dev
 
         assert result[1].name == 'commander'
         assert result[1].version == '2.15.1'
-        assert result[1].dev == False
+        assert not result[1].dev
