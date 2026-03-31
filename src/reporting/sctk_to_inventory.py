@@ -284,16 +284,24 @@ def update_data_field(info_list, package_field_name, report=False):
                             elif 'email' in item:
                                 if item['email'] not in value_list:
                                     value_list.append(item['email'])
+                            # Get the 'rule_identifier' from the license matches
+                            elif 'license_expression' in item and 'matches' in item:
+                                for match in item['matches']:
+                                    if not match['rule_identifier'] in value_list:
+                                        value_list.append(match['rule_identifier'])
                         value = '\n'.join(value_list)
                     else:
                         value = '\n'.join(info_dict[key])
-                updated_dict[key] = value
+                if not key == 'license_detections':
+                    updated_dict[key] = value
                 if value and key == 'license_expressions' and report:
                     updated_dict['Detected License Expression'] = value
                 elif value and key == 'detected_license_expression' and report:
                     updated_dict['Detected License Expression'] = value
                 elif key == 'holders' and report:
                     updated_dict['Detected Copyright'] = value
+                elif key == 'license_detections':
+                    updated_dict['rule_identifier'] = value
             else:
                 updated_dict[key] = info_dict[key]
         updated_list.append(updated_dict)
