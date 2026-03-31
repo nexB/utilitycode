@@ -49,7 +49,6 @@ class TestPMFParser(FileBasedTesting):
                     ['private-sample', '0.0.0-use.local']]
         output = package_management_file_parser.get_ylock_name_version(
             test_data_file)
-        print(output)
         assert output == expected
 
     def test_gosum_process(self):
