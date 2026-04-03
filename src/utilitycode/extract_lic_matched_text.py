@@ -43,7 +43,7 @@ def cli(input, output):
     """
     Take an SCTK JSON input that has '"--license-text": true' and pull out
     each detected license’s matched_text. Save each one into its own file,
-    using the rule_identifier as the filename, in a directory.
+    using the identifier as the filename, in a directory.
     """
     if not input.endswith(".json"):
         print("The input has to be a SCTK produced .json file.")
