@@ -17,6 +17,7 @@
 # ============================================================================
 
 import click
+import hashlib
 import io
 import ntpath
 import posixpath
@@ -365,3 +366,18 @@ def get_pypi_info(package_name, version, resource):
         time.sleep(180)
         data_dict = get_pypi_info(package_name, version, resource)
     return data_dict
+
+
+def shorten_filename(name, ext=".txt"):
+    """
+    Generate a short filename with a hash suffix to prevent error when
+    creating files with long names.
+    """
+    MAX_FILENAME_LEN = 255
+    if len(name) + len(ext) <= MAX_FILENAME_LEN:
+        return f"{name}{ext}"
+
+    # Otherwise, fall back to a hash
+    prefix = name[:40].rstrip("_-")
+    h = hashlib.sha256(name.encode("utf-8")).hexdigest()[:8]
+    return f"{prefix}__{h}{ext}"

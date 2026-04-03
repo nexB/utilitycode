@@ -21,6 +21,7 @@ import json
 import os
 import sys
 
+from utilitycode.utils import shorten_filename
 
 @click.command()
 @click.argument(
@@ -74,11 +75,15 @@ def extract_matched_text(license_detections_data_list):
     """
     extracted_data = {}
     for license_detection in license_detections_data_list:
+        identifier = license_detection["identifier"]
         reference_matches = license_detection["reference_matches"]
+        matched_text_list = []
         for reference_match in reference_matches:
-            rule_identifier = reference_match["rule_identifier"]
-            matched_text = reference_match["matched_text"]
-            extracted_data[rule_identifier] = matched_text
+            if not reference_match["matched_text"] in matched_text_list:
+                matched_text_list.append(reference_match["matched_text"])
+        matched_text = '\n\n\n'.join(f"- {text}" for text in matched_text_list)
+        filename = shorten_filename(identifier)
+        extracted_data[filename] = matched_text
     return extracted_data
 
 

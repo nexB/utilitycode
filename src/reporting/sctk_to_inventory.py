@@ -20,6 +20,7 @@ import click
 import json
 
 from utilitycode import bom_utils
+from utilitycode.utils import shorten_filename
 
 ignore_scancode_fields = [
     # We always use sha1 for hashes
@@ -285,10 +286,10 @@ def update_data_field(info_list, package_field_name, report=False):
                                 if item['email'] not in value_list:
                                     value_list.append(item['email'])
                             # Get the 'rule_identifier' from the license matches
-                            elif 'license_expression' in item and 'matches' in item:
-                                for match in item['matches']:
-                                    if not match['rule_identifier'] in value_list:
-                                        value_list.append(match['rule_identifier'])
+                            elif 'license_expression' in item and 'identifier' in item:
+                                identifier_name = shorten_filename(item['identifier'])
+                                if not identifier_name in value_list:
+                                    value_list.append(identifier_name)
                         value = '\n'.join(value_list)
                     else:
                         value = '\n'.join(info_dict[key])
