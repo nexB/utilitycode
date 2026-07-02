@@ -19,6 +19,7 @@
 import click
 import json
 import os
+import requests
 import sys
 
 from utilitycode.utils import shorten_filename
@@ -74,18 +75,31 @@ def extract_matched_text(license_detections_data_list):
     the matched_text as the value in a dictionary.
     """
     extracted_data = {}
+    handled_rule_urls = set()
+    should_fetch = []
     for license_detection in license_detections_data_list:
         identifier = license_detection["identifier"]
         reference_matches = license_detection["reference_matches"]
         matched_text_list = []
         for reference_match in reference_matches:
-            if not reference_match["matched_text"] in matched_text_list:
-                matched_text_list.append(reference_match["matched_text"])
-        matched_text = '\n\n\n'.join(f"- {text}" for text in matched_text_list)
-        filename = shorten_filename(identifier)
-        extracted_data[filename] = matched_text
-    return extracted_data
+            if not reference_match['rule_url'] in handled_rule_urls:
+                handled_rule_urls.add(reference_match['rule_url'])
+                if is_rule_url_notice_text(reference_match['rule_url']):
+                    should_fetch.append(reference_match['rule_url'])
+                    if not reference_match["matched_text"] in matched_text_list:
+                        updated_matched_text = reference_match["license_expression_spdx"] + ":\n\n" + reference_match["matched_text"]
+                        matched_text_list.append(updated_matched_text)
+            else:
+                if reference_match['rule_url'] in should_fetch:
+                    if not reference_match["matched_text"] in matched_text_list:
+                        updated_matched_text = reference_match["license_expression_spdx"] + ":\n\n" + reference_match["matched_text"]
+                        matched_text_list.append(updated_matched_text)
 
+        if matched_text_list:
+            matched_text = '\n\n\n'.join(f"{text}" for text in matched_text_list)
+            filename = shorten_filename(identifier)
+            extracted_data[filename] = matched_text
+    return extracted_data
 
 def save_to_files(data_dict, output_dir):
     """
@@ -98,3 +112,44 @@ def save_to_files(data_dict, output_dir):
 
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(str(data_dict[matched_rule]))
+
+
+
+def github_to_raw(url: str) -> str:
+    """
+    Convert GitHub file URLs (tree/blob) into raw.githubusercontent.com links.
+    """
+    if "github.com" in url:
+        parts = url.split("/")
+        user, repo = parts[3], parts[4]
+        branch = parts[6]
+        path = "/".join(parts[7:])
+        raw_url = f"https://raw.githubusercontent.com/{user}/{repo}/{branch}/{path}"
+        return raw_url
+    else:
+        raise ValueError("Not a valid GitHub URL")
+
+
+def has_license_notice_or_text(content: str) -> bool:
+    """
+    Return True if the content contains either
+    'is_license_notice: yes' or 'is_license_text: yes'.
+    """
+    for key in ["is_license_notice: yes", "is_license_text: yes"]:
+        if key in content:
+            return True
+    return False
+
+def is_rule_url_notice_text(url):
+    try:
+        if url.endswith('.LICENSE'):
+            return True
+        raw_url = github_to_raw(url)
+        response = requests.get(raw_url)
+        response.raise_for_status()
+        if has_license_notice_or_text(response.text):
+            return True
+        else:
+            return False
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching {url}: {e}")
